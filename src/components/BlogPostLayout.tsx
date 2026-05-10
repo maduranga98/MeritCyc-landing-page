@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 
 interface BlogPostLayoutProps {
@@ -14,10 +12,7 @@ interface BlogPostLayoutProps {
 export default function BlogPostLayout({ title, date, readTime, children, relatedPosts, jsonLd }: BlogPostLayoutProps) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <main style={{ maxWidth: 720, margin: '0 auto', padding: '80px 24px 120px' }}>
         {/* Nav back */}
         <Link
