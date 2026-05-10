@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import MeritLogo from "@/components/MeritLogo";
 const ACCENT = "#10B981";
 
@@ -8,6 +9,7 @@ const NAV_LINKS = [
   { label: "How It Works", href: "#how-it-works" },
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Blog", href: "/blog" },
 ];
 
 function useScrolled(threshold = 80) {
@@ -50,20 +52,21 @@ export default function Navbar() {
       >
         {/* Wordmark */}
 
-        <div
+        <Link
+          href="/"
           style={{
             fontFamily: "var(--font-main)",
             fontWeight: 700,
             fontSize: 22,
             letterSpacing: "-0.02em",
-            cursor: "pointer",
+            textDecoration: "none",
           }}
         >
           <MeritLogo size="small" />
           {"              "}
           <span style={{ color: "var(--navy)" }}>Merit</span>
           <span style={{ color: ACCENT }}>Cyc</span>
-        </div>
+        </Link>
 
         {/* Desktop links */}
         <div
