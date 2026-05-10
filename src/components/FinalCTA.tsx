@@ -29,49 +29,55 @@ export default function FinalCTA() {
           Join companies that have made salary increment decisions fair, transparent, and
           financially responsible.
         </p>
-        <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <button
-            style={{
-              padding: '14px 28px',
-              background: ACCENT,
-              border: 'none',
-              borderRadius: 10,
-              fontFamily: 'var(--font-main)',
-              fontSize: 16,
-              fontWeight: 600,
-              color: 'white',
-              cursor: 'pointer',
-              transition: 'opacity 0.2s, transform 0.2s',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.opacity = '0.9';
-              e.currentTarget.style.transform = 'translateY(-1px)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.opacity = '1';
-              e.currentTarget.style.transform = '';
-            }}
-          >
-            Start Free Trial
-          </button>
-          <button
-            style={{
-              padding: '14px 28px',
-              background: 'transparent',
-              border: '1.5px solid rgba(255,255,255,0.2)',
-              borderRadius: 10,
-              fontFamily: 'var(--font-main)',
-              fontSize: 16,
-              fontWeight: 600,
-              color: 'white',
-              cursor: 'pointer',
-              transition: 'border-color 0.2s',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)')}
-            onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)')}
-          >
-            Book a Demo
-          </button>
+        <div style={{ marginBottom: 8 }}>
+          <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button
+              style={{
+                padding: '14px 28px',
+                background: ACCENT,
+                border: 'none',
+                borderRadius: 10,
+                fontFamily: 'var(--font-main)',
+                fontSize: 16,
+                fontWeight: 600,
+                color: 'white',
+                cursor: 'pointer',
+                transition: 'opacity 0.2s, transform 0.2s',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = '0.9';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = '1';
+                e.currentTarget.style.transform = '';
+              }}
+            >
+              Start Free Trial
+            </button>
+            <button
+              style={{
+                padding: '14px 28px',
+                background: 'transparent',
+                border: '1.5px solid rgba(255,255,255,0.2)',
+                borderRadius: 10,
+                fontFamily: 'var(--font-main)',
+                fontSize: 16,
+                fontWeight: 600,
+                color: 'white',
+                cursor: 'pointer',
+                transition: 'border-color 0.2s',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)')}
+              onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)')}
+            >
+              Book a Demo
+            </button>
+          </div>
+          {/* Friction reducer */}
+          <p style={{ fontSize: 13, color: 'var(--slate-400)', textAlign: 'center', marginTop: 12 }}>
+            14-day free trial &middot; No credit card required &middot; Setup in under 10 minutes
+          </p>
         </div>
       </div>
     </section>

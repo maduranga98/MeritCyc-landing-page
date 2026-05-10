@@ -1,99 +1,76 @@
 'use client';
 
-const TESTIMONIALS = [
-  {
-    quote: 'MeritCyc saved our HR team 40 hours per increment cycle. What used to take weeks now takes hours.',
-    author: 'VP People Ops',
-    company: 'Tech Company',
-  },
-  {
-    quote: 'For the first time, employees actually trust our increment process. Transparency changed everything.',
-    author: 'HR Director',
-    company: 'Finance Firm',
-  },
-  {
-    quote: 'The budget simulation alone was worth switching from spreadsheets. No more finance fire drills.',
-    author: 'CFO',
-    company: 'Professional Services',
-  },
-];
+const ACCENT = '#10B981';
 
 export default function Testimonials() {
   return (
     <section style={{ padding: '96px 24px', background: 'var(--slate-50)' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div className="reveal" style={{ textAlign: 'center', marginBottom: 60 }}>
-          <p
-            style={{
-              fontSize: 13,
-              fontFamily: 'var(--font-mono)',
-              color: 'var(--slate-400)',
-              letterSpacing: '0.06em',
-              textTransform: 'uppercase',
-              marginBottom: 14,
-            }}
-          >
-            Social proof
-          </p>
-          <h2
-            style={{
-              fontSize: 'clamp(28px, 4vw, 40px)',
-              fontWeight: 700,
-              letterSpacing: '-0.02em',
-              color: 'var(--navy)',
-            }}
-          >
-            Built for People-First Companies
-          </h2>
-        </div>
-
+      <div className="reveal" style={{ maxWidth: 680, margin: '0 auto' }}>
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: 24,
+            background: 'var(--navy)',
+            borderRadius: 16,
+            padding: '48px 32px',
+            textAlign: 'center',
           }}
         >
-          {TESTIMONIALS.map((t, i) => (
-            <div
-              key={i}
-              className={`reveal reveal-delay-${i + 1}`}
-              style={{
-                background: 'white',
-                border: '1px solid var(--slate-200)',
-                borderRadius: 14,
-                padding: 28,
-                transition: 'transform 0.2s, box-shadow 0.2s',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 8px 24px rgba(15,23,42,0.08)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = '';
-                e.currentTarget.style.boxShadow = '';
-              }}
-            >
-              <div style={{ fontSize: 32, marginBottom: 16, color: 'var(--slate-200)' }}>&ldquo;</div>
-              <p
-                style={{
-                  fontSize: 16,
-                  fontStyle: 'italic',
-                  color: 'var(--slate-600)',
-                  lineHeight: 1.7,
-                  marginBottom: 20,
-                }}
-              >
-                {t.quote}
-              </p>
-              <div style={{ borderTop: '1px solid var(--slate-100)', paddingTop: 16 }}>
-                <p style={{ fontWeight: 600, fontSize: 14, color: 'var(--navy)' }}>{t.author}</p>
-                <p style={{ fontSize: 13, color: 'var(--slate-400)', fontFamily: 'var(--font-mono)' }}>
-                  {t.company}
-                </p>
-              </div>
-            </div>
-          ))}
+          <p
+            style={{
+              color: ACCENT,
+              fontSize: 13,
+              fontWeight: 600,
+              textTransform: 'uppercase',
+              letterSpacing: '0.06em',
+              marginBottom: 12,
+              fontFamily: 'var(--font-mono)',
+            }}
+          >
+            Early Access
+          </p>
+          <h3
+            style={{
+              color: 'white',
+              fontSize: 'clamp(24px, 3vw, 32px)',
+              fontWeight: 700,
+              marginBottom: 16,
+              letterSpacing: '-0.02em',
+            }}
+          >
+            Join HR teams already on the waitlist
+          </h3>
+          <p
+            style={{
+              color: 'var(--slate-400)',
+              maxWidth: 440,
+              margin: '0 auto 24px',
+              lineHeight: 1.7,
+              fontSize: 16,
+            }}
+          >
+            MeritCyc is currently in early access. Companies managing 50–500 employees
+            are joining now to replace spreadsheet-driven increment cycles.
+          </p>
+          <a
+            href="#pricing"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 8,
+              background: ACCENT,
+              color: 'white',
+              fontWeight: 600,
+              padding: '14px 28px',
+              borderRadius: 10,
+              textDecoration: 'none',
+              transition: 'background 0.2s',
+              fontSize: 16,
+              fontFamily: 'var(--font-main)',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = '#059669')}
+            onMouseLeave={(e) => (e.currentTarget.style.background = ACCENT)}
+          >
+            Start Free Trial
+          </a>
         </div>
       </div>
     </section>
