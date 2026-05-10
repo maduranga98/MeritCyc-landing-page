@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
@@ -44,7 +45,7 @@ export default function Post() {
         If employees can see the rules change after they start working toward them, the rules are not rules. They are suggestions. And suggestions do not build compensation trust.
       </p>
       <p style={{ marginBottom: 24 }}>
-        Criteria lock is the technical mechanism that turns increment criteria from suggestions into commitments. It is the natural complement to <a href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>compensation budget simulation</a> — simulation validates the cost before publication; lock enforces the commitment after.
+        Criteria lock is the technical mechanism that turns increment criteria from suggestions into commitments. It is the natural complement to <Link href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>compensation budget simulation</Link> — simulation validates the cost before publication; lock enforces the commitment after.
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
@@ -61,7 +62,7 @@ export default function Post() {
       <p style={{ marginBottom: 8 }}>- No criteria additions or removals are possible</p>
       <p style={{ marginBottom: 16 }}>- No tier structure changes are possible</p>
       <p style={{ marginBottom: 24 }}>
-        The lock is enforced at the database level, not just the UI. In <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a>, Firestore security rules block all writes to locked cycle documents, regardless of user role. Even a super admin cannot edit locked criteria — the only resolution is to cancel the cycle and create a new one, which generates a full audit log entry.
+        The lock is enforced at the database level, not just the UI. In <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link>, Firestore security rules block all writes to locked cycle documents, regardless of user role. Even a super admin cannot edit locked criteria — the only resolution is to cancel the cycle and create a new one, which generates a full audit log entry.
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
@@ -74,7 +75,7 @@ export default function Post() {
       <p style={{ marginBottom: 8 }}>First, employees who are on track lose confidence — they do not know if the threshold they are meeting will still exist at evaluation time.</p>
       <p style={{ marginBottom: 8 }}>Second, employees who advocate for threshold changes create an unfair dynamic — some employees know about the change, others do not.</p>
       <p style={{ marginBottom: 16 }}>Third, if a change benefits certain groups or departments disproportionately, the company has a discrimination exposure even if the intent was innocent.</p>
-      <p style={{ marginBottom: 24 }}>Criteria lock eliminates all three scenarios by making mid-cycle changes structurally impossible. See how <a href="/#features" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>criteria lock works in MeritCyc</a>.</p>
+      <p style={{ marginBottom: 24 }}>Criteria lock eliminates all three scenarios by making mid-cycle changes structurally impossible. See how <Link href="/#features" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>criteria lock works in MeritCyc</Link>.</p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
         Why Criteria Lock Matters for Finance and Legal
@@ -90,7 +91,7 @@ export default function Post() {
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
         How Criteria Lock Is Implemented in MeritCyc
       </h2>
-      <p style={{ marginBottom: 16 }}><a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> enforces criteria lock at three layers:</p>
+      <p style={{ marginBottom: 16 }}><Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> enforces criteria lock at three layers:</p>
       <p style={{ marginBottom: 8 }}><strong>Layer 1 — Firestore security rules.</strong> The cycle document in Firestore has a <code>lockedAt</code> field set at publication time. Security rules block all write operations on criteria sub-documents once <code>lockedAt</code> is populated. This enforcement happens server-side, not in the UI.</p>
       <p style={{ marginBottom: 8 }}><strong>Layer 2 — Cloud Function gate.</strong> All cycle update functions check for lock status before processing. Any edit request on a locked cycle returns a 403 with the error code <code>CYCLE_LOCKED</code>.</p>
       <p style={{ marginBottom: 16 }}><strong>Layer 3 — UI enforcement.</strong> The criteria builder UI removes all edit controls and displays a lock icon with the lock timestamp when a cycle is in locked status. The only visible action is &ldquo;Cancel Cycle&rdquo; — which requires confirmation and generates an audit log entry.</p>
@@ -109,7 +110,7 @@ export default function Post() {
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>FAQ</h2>
 
       <p style={{ marginBottom: 8 }}><strong>Can criteria lock be overridden by an admin?</strong></p>
-      <p style={{ marginBottom: 16 }}>In <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a>, no. Criteria lock is enforced at the Firestore rules level, not the application level. No role — including platform admin — can write to a locked cycle document. The only action available is cycle cancellation followed by new cycle creation.</p>
+      <p style={{ marginBottom: 16 }}>In <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link>, no. Criteria lock is enforced at the Firestore rules level, not the application level. No role — including platform admin — can write to a locked cycle document. The only action available is cycle cancellation followed by new cycle creation.</p>
 
       <p style={{ marginBottom: 8 }}><strong>What is the difference between criteria lock and approval workflow?</strong></p>
       <p style={{ marginBottom: 16 }}>An approval workflow requires a second person to approve criteria before publication. Criteria lock prevents modification after publication. Both are needed in a complete governance model: approval ensures the right people agreed to the criteria; lock ensures those criteria cannot change once agreed.</p>

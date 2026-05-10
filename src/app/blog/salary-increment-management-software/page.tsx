@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
@@ -97,10 +98,10 @@ export default function Post() {
         MeritCyc is a salary increment intelligence platform designed for mid-size companies (50–500 employees). Unlike broader HR platforms where compensation is one module among many, MeritCyc&apos;s entire product is built around the increment cycle.
       </p>
       <p style={{ marginBottom: 24 }}>
-        Its two core differentiators are the <a href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Budget Simulation Engine</strong></a> — model five scenarios before publishing — and <a href="/blog/criteria-lock-compensation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Criteria Lock</strong></a> — Firestore-enforced immutability once a cycle goes live. Every employee also receives an auto-generated <strong>Increment Story</strong> at cycle completion.
+        Its two core differentiators are the <Link href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Budget Simulation Engine</strong></Link> — model five scenarios before publishing — and <Link href="/blog/criteria-lock-compensation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Criteria Lock</strong></Link> — Firestore-enforced immutability once a cycle goes live. Every employee also receives an auto-generated <strong>Increment Story</strong> at cycle completion.
       </p>
       <p style={{ marginBottom: 24 }}>
-        <a href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Start a 14-day free trial →</a>
+        <Link href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Start a 14-day free trial →</Link>
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>FAQ</h2>
@@ -115,9 +116,9 @@ export default function Post() {
       <p style={{ marginBottom: 16 }}>Most companies complete their first increment cycle setup in under two hours. The onboarding wizard walks through company structure, salary bands, and criteria configuration in four steps.</p>
 
       <p style={{ marginBottom: 8 }}><strong>Related posts:</strong></p>
-      <p style={{ marginBottom: 8 }}><a href="/blog/merit-cycle-best-practices" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>How to Run a Merit Cycle: A 2026 Step-by-Step Guide →</a></p>
-      <p style={{ marginBottom: 8 }}><a href="/blog/cfo-guide-merit-cycles" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>The CFO&apos;s Guide to Compensation Budget Planning →</a></p>
-      <p style={{ marginBottom: 16 }}><a href="/blog/spreadsheet-vs-compensation-software" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Spreadsheets vs Compensation Software: A Cost Comparison →</a></p>
+      <p style={{ marginBottom: 8 }}><Link href="/blog/merit-cycle-best-practices" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>How to Run a Merit Cycle: A 2026 Step-by-Step Guide →</Link></p>
+      <p style={{ marginBottom: 8 }}><Link href="/blog/cfo-guide-merit-cycles" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>The CFO&apos;s Guide to Compensation Budget Planning →</Link></p>
+      <p style={{ marginBottom: 16 }}><Link href="/blog/spreadsheet-vs-compensation-software" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Spreadsheets vs Compensation Software: A Cost Comparison →</Link></p>
     </BlogPostLayout>
   );
 }

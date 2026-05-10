@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
@@ -117,7 +118,7 @@ export default function Post() {
       <p style={{ marginBottom: 8 }}>Scenario A: 85% threshold → 41 employees qualify → $1.9M total cost</p>
       <p style={{ marginBottom: 16 }}>Scenario B: 80% threshold → 73 employees qualify → $3.4M total cost</p>
       <p style={{ marginBottom: 24 }}>
-        If the $3.4M outcome exceeds the approved budget, you adjust the threshold now — before it&apos;s published — not mid-cycle. This is what <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a>&apos;s <a href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Budget Simulation Engine</strong></a> does: side-by-side scenario modelling with finance-grade output, before a single employee sees the rules.
+        If the $3.4M outcome exceeds the approved budget, you adjust the threshold now — before it&apos;s published — not mid-cycle. This is what <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link>&apos;s <Link href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Budget Simulation Engine</strong></Link> does: side-by-side scenario modelling with finance-grade output, before a single employee sees the rules.
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
@@ -150,7 +151,7 @@ export default function Post() {
       <p style={{ marginBottom: 8 }}>- Cross-department inconsistency for equivalent roles</p>
       <p style={{ marginBottom: 16 }}>- Outliers that require explanation</p>
       <p style={{ marginBottom: 24 }}>
-        Any override must include a written justification — logged in the audit trail. Once reviewed, HR finalizes the cycle. This triggers score calculations, increment amounts, and — in <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> — the generation of Increment Stories for every employee.
+        Any override must include a written justification — logged in the audit trail. Once reviewed, HR finalizes the cycle. This triggers score calculations, increment amounts, and — in <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> — the generation of Increment Stories for every employee.
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
@@ -163,7 +164,7 @@ export default function Post() {
       <p style={{ marginBottom: 8 }}>- What was my score and how was it calculated?</p>
       <p style={{ marginBottom: 8 }}>- Which tier did I qualify for and why?</p>
       <p style={{ marginBottom: 16 }}>- What specifically would move me to a higher tier next cycle?</p>
-      <p style={{ marginBottom: 24 }}><a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> generates these automatically at cycle finalization. Explore <a href="/#features" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>all MeritCyc features</a>.</p>
+      <p style={{ marginBottom: 24 }}><Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> generates these automatically at cycle finalization. Explore <Link href="/#features" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>all MeritCyc features</Link>.</p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>FAQ</h2>
 

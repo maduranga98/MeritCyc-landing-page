@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | MeritCyc',
@@ -54,9 +55,9 @@ export default function PrivacyPolicy() {
         </p>
       </div>
       <div style={{ marginTop: 48, paddingTop: 24, borderTop: '1px solid var(--slate-200)' }}>
-        <a href="/" style={{ fontSize: 14, color: 'var(--emerald)', fontWeight: 600, textDecoration: 'none' }}>
+        <Link href="/" style={{ fontSize: 14, color: 'var(--emerald)', fontWeight: 600, textDecoration: 'none' }}>
           &larr; Back to MeritCyc
-        </a>
+        </Link>
       </div>
     </main>
   );

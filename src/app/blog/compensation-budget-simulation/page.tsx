@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
@@ -140,7 +141,7 @@ export default function Post() {
         Both are necessary. A platform that simulates but allows mid-cycle criteria edits defeats the purpose — a budget-safe scenario can be invalidated by a threshold change after publication. A platform that locks without simulation is enforcing a commitment HR was never given the tools to make safely.
       </p>
       <p style={{ marginBottom: 24 }}>
-        <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a>&apos;s <a href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Budget Simulation Engine</strong></a> is explicitly designed to precede the <a href="/blog/criteria-lock-compensation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Criteria Lock</strong></a> step. HR runs simulations in draft mode. Finance approves a scenario. The criteria are published and locked. The simulation output becomes the financial forecast — not a hope, but a modelled commitment.
+        <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link>&apos;s <Link href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Budget Simulation Engine</strong></Link> is explicitly designed to precede the <Link href="/blog/criteria-lock-compensation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>Criteria Lock</strong></Link> step. HR runs simulations in draft mode. Finance approves a scenario. The criteria are published and locked. The simulation output becomes the financial forecast — not a hope, but a modelled commitment.
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
@@ -150,18 +151,18 @@ export default function Post() {
       <p style={{ marginBottom: 8 }}>- <strong>HR Director / People Ops:</strong> owns the criteria design and the tier structure</p>
       <p style={{ marginBottom: 8 }}>- <strong>CFO / VP Finance:</strong> approves the budget scenario and defines the maximum pool</p>
       <p style={{ marginBottom: 16 }}>- <strong>CHRO / People Analytics (if applicable):</strong> validates that the historical data used is representative</p>
-      <p style={{ marginBottom: 24 }}>The simulation output should be formally approved by finance before criteria are published. In <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a>, you can save up to five named scenarios and share the comparison view with stakeholders before the lock action is taken. See <a href="/#how-it-works" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>how MeritCyc works</a>.</p>
+      <p style={{ marginBottom: 24 }}>The simulation output should be formally approved by finance before criteria are published. In <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link>, you can save up to five named scenarios and share the comparison view with stakeholders before the lock action is taken. See <Link href="/#how-it-works" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>how MeritCyc works</Link>.</p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>FAQ</h2>
 
       <p style={{ marginBottom: 8 }}><strong>Can I run budget simulation if I don&apos;t have historical performance data?</strong></p>
-      <p style={{ marginBottom: 16 }}>Yes. You can use assumptions about your workforce&apos;s score distribution — for example, assuming a normal distribution with a mean of 72 points and a standard deviation of 12. <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> allows manual distribution inputs when historical data is not yet available. The simulation output is clearly marked as estimate-based.</p>
+      <p style={{ marginBottom: 16 }}>Yes. You can use assumptions about your workforce&apos;s score distribution — for example, assuming a normal distribution with a mean of 72 points and a standard deviation of 12. <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> allows manual distribution inputs when historical data is not yet available. The simulation output is clearly marked as estimate-based.</p>
 
       <p style={{ marginBottom: 8 }}><strong>What is the difference between a merit matrix and a budget simulation?</strong></p>
       <p style={{ marginBottom: 16 }}>A merit matrix maps performance ratings to increment percentages. It is a decision <em>guide</em> for managers. Budget simulation models the <em>financial outcome</em> of applying a merit matrix to your actual workforce. You need both: the matrix defines the rules, simulation validates the cost.</p>
 
       <p style={{ marginBottom: 8 }}><strong>Does compensation budget simulation work for both fixed-pool and percentage-based budgets?</strong></p>
-      <p style={{ marginBottom: 16 }}>Yes. Fixed-pool mode calculates how much of the pool is consumed at each tier threshold. Percentage-cap mode calculates total cost based on eligible employees&apos; current salaries and the cap percentage. <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> supports both modes in the simulation engine.</p>
+      <p style={{ marginBottom: 16 }}>Yes. Fixed-pool mode calculates how much of the pool is consumed at each tier threshold. Percentage-cap mode calculates total cost based on eligible employees&apos; current salaries and the cap percentage. <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> supports both modes in the simulation engine.</p>
     </BlogPostLayout>
   );
 }
