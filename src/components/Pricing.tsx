@@ -192,7 +192,7 @@ export default function Pricing() {
                           flexShrink: 0,
                         }}
                       >
-                        ✓
+                        &#10003;
                       </span>
                       {f}
                     </li>
@@ -224,6 +224,13 @@ export default function Pricing() {
                 >
                   {tier.cta}
                 </button>
+
+                {/* Friction reducer on Growth tier */}
+                {tier.id === 'growth' && (
+                  <p style={{ fontSize: 11, color: 'var(--slate-400)', textAlign: 'center', marginTop: 8 }}>
+                    14-day free trial &middot; No credit card required &middot; Setup in under 10 minutes
+                  </p>
+                )}
               </div>
             );
           })}

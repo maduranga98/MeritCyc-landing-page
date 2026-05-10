@@ -5,18 +5,18 @@ const ACCENT = '#10B981';
 const STEPS = [
   {
     n: '01',
-    title: 'Simulate Before You Commit',
-    desc: 'HR runs budget scenarios before publishing criteria. See exactly how many employees qualify at each tier before anyone knows the rules.',
+    title: 'Run Budget Simulation Before Publishing Criteria',
+    desc: 'Before any employee sees the rules, HR runs multiple scenarios using historical data. See exactly how many employees qualify at each increment tier — and the total budget impact — before you commit.',
   },
   {
     n: '02',
-    title: 'Lock Criteria. Build Trust.',
-    desc: 'Once published, criteria are immutably locked. Employees see the rules. No mid-cycle changes. Ever.',
+    title: 'Lock Increment Criteria — No Mid-Cycle Changes',
+    desc: 'Once published, criteria are immutably locked in Firestore. Employees see the same rules throughout. No mid-cycle adjustments. No favoritism claims. Built-in governance your finance team can audit.',
   },
   {
     n: '03',
-    title: 'Transparent Outcomes',
-    desc: 'Every employee gets an Increment Story — a data-driven explanation of their score, tier, and what to improve next cycle.',
+    title: 'Every Employee Gets an Increment Story',
+    desc: 'MeritCyc auto-generates a personalized decision explanation for each employee — their score breakdown, tier placement, and specific improvement guidance for the next cycle.',
   },
 ];
 
@@ -45,7 +45,7 @@ export default function HowItWorks() {
               color: 'var(--navy)',
             }}
           >
-            How MeritCyc Works
+            How Salary Increment Cycles Work in MeritCyc
           </h2>
         </div>
 

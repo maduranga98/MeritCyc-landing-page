@@ -14,7 +14,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Problem />
+        <div id="about">
+          <Problem />
+        </div>
         <HowItWorks />
         <Features />
         <Pricing />
