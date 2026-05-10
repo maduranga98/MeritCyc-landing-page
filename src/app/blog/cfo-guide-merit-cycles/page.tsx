@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
@@ -75,10 +76,10 @@ export default function Post() {
         A platform with genuine budget control has three capabilities that spreadsheets lack:
       </p>
       <p style={{ marginBottom: 16 }}>
-        <strong>Pre-publish budget simulation.</strong> Before a single employee sees the increment criteria, HR and finance run the financial model. The platform takes historical performance data, applies the proposed criteria and thresholds, and produces a projected outcome: how many employees qualify at each tier, and what the total budget exposure is. Multiple scenarios are run side-by-side until a scenario that meets budget constraints is identified. That scenario becomes the published criteria. Learn more about <a href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>compensation budget simulation</a>.
+        <strong>Pre-publish budget simulation.</strong> Before a single employee sees the increment criteria, HR and finance run the financial model. The platform takes historical performance data, applies the proposed criteria and thresholds, and produces a projected outcome: how many employees qualify at each tier, and what the total budget exposure is. Multiple scenarios are run side-by-side until a scenario that meets budget constraints is identified. That scenario becomes the published criteria. Learn more about <Link href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>compensation budget simulation</Link>.
       </p>
       <p style={{ marginBottom: 16 }}>
-        <strong>Criteria lock with financial model binding.</strong> The approved scenario is published and locked. The budget model and the criteria are tied together. No post-publication changes are possible. The financial forecast is now the financial commitment. Read about <a href="/blog/criteria-lock-compensation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>criteria lock in compensation cycles</a>.
+        <strong>Criteria lock with financial model binding.</strong> The approved scenario is published and locked. The budget model and the criteria are tied together. No post-publication changes are possible. The financial forecast is now the financial commitment. Read about <Link href="/blog/criteria-lock-compensation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>criteria lock in compensation cycles</Link>.
       </p>
       <p style={{ marginBottom: 24 }}>
         <strong>Real-time budget tracking during evaluation.</strong> As managers submit scores during the active cycle, the platform updates the projected budget in real time. Finance can see budget burn as a percentage of the approved pool. Configurable alerts fire at 80% and 95% utilization. There are no surprises at finalization.
@@ -168,7 +169,7 @@ export default function Post() {
         </table>
       </div>
       <p style={{ marginBottom: 24 }}>
-        This is a conservative model. The retention component alone — preventing one senior departure per year — typically exceeds the annual software cost by 5–7×. <a href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>View MeritCyc pricing and start a free trial</a>.
+        This is a conservative model. The retention component alone — preventing one senior departure per year — typically exceeds the annual software cost by 5–7×. <Link href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>View MeritCyc pricing and start a free trial</Link>.
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>FAQ</h2>
@@ -177,10 +178,10 @@ export default function Post() {
       <p style={{ marginBottom: 16 }}>Compensation software is a shared tool that serves both HR and finance. In practice, it is most often budgeted under HR operating expenses. However, given the financial governance and compliance value, a strong case can be made for it to sit under finance operations. Either is reasonable; what matters is that both functions are involved in the vendor selection and implementation.</p>
 
       <p style={{ marginBottom: 8 }}><strong>How does compensation software integrate with financial planning?</strong></p>
-      <p style={{ marginBottom: 16 }}>The budget simulation output from a compensation platform can be exported and integrated into financial planning and analysis workflows. The projected increment cost becomes a line item in workforce cost modelling. Most CFOs ask for this output in spreadsheet-compatible format — <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> supports CSV export of simulation scenarios.</p>
+      <p style={{ marginBottom: 16 }}>The budget simulation output from a compensation platform can be exported and integrated into financial planning and analysis workflows. The projected increment cost becomes a line item in workforce cost modelling. Most CFOs ask for this output in spreadsheet-compatible format — <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> supports CSV export of simulation scenarios.</p>
 
       <p style={{ marginBottom: 8 }}><strong>What is the implementation timeline for a mid-size company?</strong></p>
-      <p style={{ marginBottom: 16 }}>For a 50–500 employee company, implementation of a dedicated compensation platform typically takes 1–3 weeks: 1 week for data import and configuration, 1 week for HR team training, and optionally 1 week for a pilot cycle. <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a>&rsquo;s guided onboarding wizard reduces setup time to under 2 hours for the initial configuration.</p>
+      <p style={{ marginBottom: 16 }}>For a 50–500 employee company, implementation of a dedicated compensation platform typically takes 1–3 weeks: 1 week for data import and configuration, 1 week for HR team training, and optionally 1 week for a pilot cycle. <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link>&rsquo;s guided onboarding wizard reduces setup time to under 2 hours for the initial configuration.</p>
     </BlogPostLayout>
   );
 }

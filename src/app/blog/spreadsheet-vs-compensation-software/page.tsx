@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
@@ -93,7 +94,7 @@ export default function Post() {
         A real scenario: a 300-employee company sets a Tier 1 threshold that, historically, 60% of the workforce exceeds. The approved budget assumed 30% qualification. The overrun is $400,000.
       </p>
       <p style={{ marginBottom: 16 }}>
-        Dedicated compensation software with a <a href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>budget simulation engine</strong></a> prevents this by showing the projected outcome before criteria are published. HR adjusts the threshold from 80 to 87 points. Tier 1 qualification drops to 31%. Budget is within plan.
+        Dedicated compensation software with a <Link href="/blog/compensation-budget-simulation" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}><strong>budget simulation engine</strong></Link> prevents this by showing the projected outcome before criteria are published. HR adjusts the threshold from 80 to 87 points. Tier 1 qualification drops to 31%. Budget is within plan.
       </p>
       <p style={{ marginBottom: 24 }}>
         The cost of the software subscription for a year at $7/employee/month for 300 employees is $25,200. The avoided overrun is $400,000. The ROI calculation does not require a spreadsheet.
@@ -125,7 +126,7 @@ export default function Post() {
         The average cost to replace an employee in a knowledge-work role is 50–200% of annual salary. For a mid-size company losing 3–5 high performers per year partly attributable to opaque increment processes, the retention cost calculation is significant.
       </p>
       <p style={{ marginBottom: 24 }}>
-        <a href="/#features" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Increment stories</a> — auto-generated, data-driven decision explanations — address this directly. They are only possible in a dedicated platform.
+        <Link href="/#features" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Increment stories</Link> — auto-generated, data-driven decision explanations — address this directly. They are only possible in a dedicated platform.
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>
@@ -135,22 +136,22 @@ export default function Post() {
         The crossover point — where the cost and risk of spreadsheets exceeds the software subscription — is typically around <strong>50–75 employees</strong> running structured merit cycles. Below that, the time savings are smaller and the compliance exposure is lower. Above it, every cycle in a spreadsheet is a compounding risk.
       </p>
       <p style={{ marginBottom: 24 }}>
-        <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> is priced at $3–$7/employee/month specifically for this range. At 100 employees on the Starter plan, that is $300/month — less than the cost of 8 hours of HR Director time.
+        <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> is priced at $3–$7/employee/month specifically for this range. At 100 employees on the Starter plan, that is $300/month — less than the cost of 8 hours of HR Director time.
       </p>
       <p style={{ marginBottom: 24 }}>
-        <a href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Calculate your increment cycle ROI →</a> · <a href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Start a 14-day free trial →</a>
+        <Link href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Calculate your increment cycle ROI →</Link> · <Link href="/#pricing" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>Start a 14-day free trial →</Link>
       </p>
 
       <h2 style={{ fontSize: 22, fontWeight: 600, color: 'var(--navy)', marginTop: 40, marginBottom: 16 }}>FAQ</h2>
 
       <p style={{ marginBottom: 8 }}><strong>What data do I need to migrate from spreadsheets to compensation software?</strong></p>
-      <p style={{ marginBottom: 16 }}>You need: employee list (name, department, salary band, current salary), historical performance scores if available, and your increment criteria from prior cycles. Most platforms including <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> support CSV import. Migration time for a 200-employee company is typically under a day.</p>
+      <p style={{ marginBottom: 16 }}>You need: employee list (name, department, salary band, current salary), historical performance scores if available, and your increment criteria from prior cycles. Most platforms including <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> support CSV import. Migration time for a 200-employee company is typically under a day.</p>
 
       <p style={{ marginBottom: 8 }}><strong>Can compensation software integrate with our existing HRIS?</strong></p>
-      <p style={{ marginBottom: 16 }}>The major platforms integrate with BambooHR, Workday, Rippling, and similar HRIS systems. <a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a>&rsquo;s current roadmap includes HRIS integrations in Phase 3. For now, employee data can be imported via CSV or managed directly in the platform.</p>
+      <p style={{ marginBottom: 16 }}>The major platforms integrate with BambooHR, Workday, Rippling, and similar HRIS systems. <Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link>&rsquo;s current roadmap includes HRIS integrations in Phase 3. For now, employee data can be imported via CSV or managed directly in the platform.</p>
 
       <p style={{ marginBottom: 8 }}><strong>Is there a free trial available?</strong></p>
-      <p style={{ marginBottom: 16 }}><a href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</a> offers a 14-day free trial on the Growth plan. No credit card required. You can run a full simulated increment cycle during the trial period.</p>
+      <p style={{ marginBottom: 16 }}><Link href="/" style={{ color: 'var(--emerald)', textDecoration: 'underline' }}>MeritCyc</Link> offers a 14-day free trial on the Growth plan. No credit card required. You can run a full simulated increment cycle during the trial period.</p>
     </BlogPostLayout>
   );
 }
