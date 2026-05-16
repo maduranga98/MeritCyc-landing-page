@@ -7,10 +7,13 @@ export const metadata: Metadata = {
   description:
     'Learn how compensation budget simulation helps HR and finance teams model merit cycle costs before publishing criteria — eliminating budget surprises and overruns.',
   keywords: ['compensation budget simulation', 'merit cycle budget simulator', 'salary increment budget planning', 'budget simulation compensation'],
+  alternates: { canonical: '/blog/compensation-budget-simulation' },
   openGraph: {
     title: 'Compensation Budget Simulation: How to Model Merit Cycle Costs Before You Commit',
     description: 'Learn how compensation budget simulation helps HR and finance teams model merit cycle costs before publishing criteria.',
     type: 'article',
+    url: 'https://meritcyc-landing.web.app/blog/compensation-budget-simulation',
+    images: ['https://meritcyc-landing.web.app/og-image.png'],
   },
 };
 
@@ -21,7 +24,10 @@ const jsonLd = {
   description: 'Learn how compensation budget simulation helps HR and finance teams model merit cycle costs before publishing criteria.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD' },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' } },
+  image: 'https://meritcyc-landing.web.app/og-image.png',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc-landing.web.app/blog/compensation-budget-simulation' },
+  dateModified: '2026-05-16',
 };
 
 export default function Post() {

@@ -7,10 +7,13 @@ export const metadata: Metadata = {
   description:
     'Criteria lock prevents mid-cycle changes to increment criteria after publication. Learn why it is essential for employee trust, pay equity, and compensation governance.',
   keywords: ['criteria lock compensation', 'increment criteria lock', 'compensation governance', 'merit cycle criteria management'],
+  alternates: { canonical: '/blog/criteria-lock-compensation' },
   openGraph: {
     title: 'Criteria Lock in Compensation Cycles: Why It Matters and How It Works',
     description: 'Criteria lock prevents mid-cycle changes to increment criteria after publication.',
     type: 'article',
+    url: 'https://meritcyc-landing.web.app/blog/criteria-lock-compensation',
+    images: ['https://meritcyc-landing.web.app/og-image.png'],
   },
 };
 
@@ -21,7 +24,10 @@ const jsonLd = {
   description: 'Criteria lock prevents mid-cycle changes to increment criteria after publication.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD' },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' } },
+  image: 'https://meritcyc-landing.web.app/og-image.png',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc-landing.web.app/blog/criteria-lock-compensation' },
+  dateModified: '2026-05-16',
 };
 
 export default function Post() {

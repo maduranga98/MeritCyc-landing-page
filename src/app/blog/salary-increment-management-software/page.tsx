@@ -7,10 +7,13 @@ export const metadata: Metadata = {
   description:
     'A complete guide to salary increment management software for HR Directors and CFOs at 50–500 employee companies. Covers features, pricing, and how to choose.',
   keywords: ['salary increment management software', 'increment cycle software', 'merit cycle software', 'compensation planning software'],
+  alternates: { canonical: '/blog/salary-increment-management-software' },
   openGraph: {
     title: 'What Is Salary Increment Management Software? A 2026 Buyer Guide',
     description: 'A complete guide to salary increment management software for HR Directors and CFOs at 50–500 employee companies.',
     type: 'article',
+    url: 'https://meritcyc-landing.web.app/blog/salary-increment-management-software',
+    images: ['https://meritcyc-landing.web.app/og-image.png'],
   },
 };
 
@@ -21,7 +24,10 @@ const jsonLd = {
   description: 'A complete guide to salary increment management software for HR Directors and CFOs at 50–500 employee companies.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD' },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' } },
+  image: 'https://meritcyc-landing.web.app/og-image.png',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc-landing.web.app/blog/salary-increment-management-software' },
+  dateModified: '2026-05-16',
 };
 
 export default function Post() {

@@ -12,7 +12,10 @@ interface BlogPostLayoutProps {
 export default function BlogPostLayout({ title, date, readTime, children, relatedPosts, jsonLd }: BlogPostLayoutProps) {
   return (
     <>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <main style={{ maxWidth: 720, margin: '0 auto', padding: '80px 24px 120px' }}>
         {/* Nav back */}
         <Link
