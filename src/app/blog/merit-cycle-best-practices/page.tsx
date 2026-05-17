@@ -7,10 +7,13 @@ export const metadata: Metadata = {
   description:
     'A practical guide to running a merit cycle from setup to employee communication. Covers criteria design, budget simulation, criteria lock, and increment stories.',
   keywords: ['merit cycle best practices', 'merit cycle software', 'how to run a merit cycle', 'compensation cycle management'],
+  alternates: { canonical: '/blog/merit-cycle-best-practices' },
   openGraph: {
     title: 'How to Run a Merit Cycle in 2026: Step-by-Step Best Practices',
     description: 'A practical guide to running a merit cycle from setup to employee communication.',
     type: 'article',
+    url: 'https://meritcyc-landing.web.app/blog/merit-cycle-best-practices',
+    images: ['https://meritcyc-landing.web.app/og-image.png'],
   },
 };
 
@@ -21,7 +24,10 @@ const jsonLd = {
   description: 'A practical guide to running a merit cycle from setup to employee communication.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD' },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' } },
+  image: 'https://meritcyc-landing.web.app/og-image.png',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc-landing.web.app/blog/merit-cycle-best-practices' },
+  dateModified: '2026-05-16',
 };
 
 export default function Post() {

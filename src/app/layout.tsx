@@ -3,6 +3,8 @@ import './globals.css';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://meritcyc-landing.web.app'),
+  alternates: { canonical: '/' },
   title: 'MeritCyc — Salary Increment Management Software',
   description:
     'Run salary increment cycles with budget simulation and criteria lock. Built for CFOs and HR Directors at 50–500 employee companies. Start your free trial.',
@@ -95,8 +97,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
         <RevealObserver />
         {children}
       </body>
