@@ -1,3 +1,5 @@
+import blogData from '@/app/blog/data.json';
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -8,7 +10,9 @@ export interface BlogPost {
   content: React.ReactNode;
 }
 
-export const POSTS: Omit<BlogPost, 'content'>[] = [
+export type PostSummary = Omit<BlogPost, 'content'>;
+
+const STATIC_POSTS: PostSummary[] = [
   {
     slug: 'salary-increment-management-software',
     title: 'What Is Salary Increment Management Software? A 2026 Buyer Guide',
@@ -58,3 +62,43 @@ export const POSTS: Omit<BlogPost, 'content'>[] = [
     keywords: ['CFO compensation planning', 'salary increment budget control', 'compensation software for CFO', 'merit cycle budget governance', 'increment cycle finance'],
   },
 ];
+
+interface JsonBlogPost {
+  meta: {
+    slug: string;
+    title: string;
+    meta_description: string;
+    meta_keywords?: string[];
+  };
+  content: {
+    suggested_publish_date?: string;
+    reading_time_minutes?: number;
+    h1?: string;
+    intro?: string;
+    sections?: Array<{ h2?: string; h3?: string; body?: string }>;
+    cta?: { heading?: string; body?: string; button_text?: string; button_url?: string };
+  };
+}
+
+const JSON_POSTS_RAW = (blogData as { blog_posts: JsonBlogPost[] }).blog_posts;
+
+const jsonPostSummaries: PostSummary[] = JSON_POSTS_RAW.map((p) => ({
+  slug: p.meta.slug,
+  title: p.meta.title,
+  description: p.meta.meta_description,
+  date: p.content.suggested_publish_date ?? '',
+  readTime: p.content.reading_time_minutes ? `${p.content.reading_time_minutes} min read` : '',
+  keywords: p.meta.meta_keywords ?? [],
+}));
+
+export const POSTS: PostSummary[] = [...STATIC_POSTS, ...jsonPostSummaries].sort(
+  (a, b) => (b.date > a.date ? 1 : -1)
+);
+
+export function getJsonPost(slug: string): JsonBlogPost | undefined {
+  return JSON_POSTS_RAW.find((p) => p.meta.slug === slug);
+}
+
+export function getAllJsonSlugs(): string[] {
+  return JSON_POSTS_RAW.map((p) => p.meta.slug);
+}
