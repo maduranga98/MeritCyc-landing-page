@@ -1,0 +1,1479 @@
+{
+  "blog_posts": [
+    {
+      "id": 1,
+      "meta": {
+        "title": "How to Run a Merit Cycle: A Step-by-Step Guide for HR Teams (2026)",
+        "slug": "how-to-run-a-merit-cycle",
+        "canonical_url": "https://meritcyc.com/blog/how-to-run-a-merit-cycle",
+        "meta_description": "Learn how to run a merit cycle from start to finish. This step-by-step guide covers criteria building, budget simulation, scoring, criteria lock, and increment stories — built for HR teams at 50–500 employee companies.",
+        "meta_keywords": [
+          "how to run a merit cycle",
+          "merit cycle management",
+          "merit cycle process",
+          "salary increment process",
+          "compensation cycle"
+        ],
+        "og_title": "How to Run a Merit Cycle: Step-by-Step Guide for HR Teams",
+        "og_description": "A practical, end-to-end playbook for HR Directors running their first — or fiftieth — merit cycle. Covers criteria design, budget simulation, and criteria lock.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/how-to-run-a-merit-cycle.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "How to Run a Merit Cycle (2026 HR Playbook)",
+        "twitter_description": "Step-by-step guide: criteria building, budget sim, manager scoring, criteria lock, increment stories. Built for 50–500 employee companies.",
+        "schema_type": "HowTo",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to Run a Merit Cycle",
+          "description": "A step-by-step process for HR teams to run a salary merit cycle — from criteria design to final increment distribution.",
+          "totalTime": "PT45M",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Define cycle scope and budget",
+              "text": "Set the cycle date range, eligible departments, and total compensation budget pool."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Build and weight increment criteria",
+              "text": "Create weighted criteria (performance, tenure, skills) that sum to 100%."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Run a budget simulation",
+              "text": "Simulate how many employees qualify at each tier before publishing criteria."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Publish and lock criteria",
+              "text": "Lock criteria so employees can trust the rules won't change mid-cycle."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Collect manager evaluations",
+              "text": "Managers score their teams against the published criteria."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Review scores and finalize",
+              "text": "HR reviews all scores, applies fairness checks, and finalizes increment amounts."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Generate increment stories",
+              "text": "Every employee receives a personalized explanation of their increment decision."
+            }
+          ]
+        }
+      },
+      "content": {
+        "category": "Guides",
+        "funnel_stage": "MOFU",
+        "target_keyword": "how to run a merit cycle",
+        "primary_search_volume_us": 70,
+        "keyword_difficulty": 14,
+        "secondary_keywords": [
+          "merit cycle management",
+          "salary increment cycle",
+          "compensation cycle process",
+          "merit increase process",
+          "HR merit cycle steps"
+        ],
+        "word_count_target": 2200,
+        "reading_time_minutes": 11,
+        "suggested_publish_date": "2026-06-02",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "People Operations",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "How to Run a Merit Cycle: A Step-by-Step Guide for HR Teams (2026)",
+          "intro": "Most companies treat a merit cycle as an annual spreadsheet scramble — five weeks of manual scoring, conflicting manager inputs, and a final week of budget panic. It doesn't have to be that way. This guide walks you through the exact process for running a merit cycle that is fair, budget-safe, and defensible to every employee who asks 'why did I get this increment?'",
+          "sections": [
+            {
+              "h2": "What Is a Merit Cycle? (And Why It's Different from a Salary Review)",
+              "body": "A merit cycle is a structured, time-bound process in which a company evaluates employees against pre-defined criteria and distributes salary increments based on those results. The key word is 'structured.' Unlike an ad-hoc salary review — which can happen at any time, for any reason, based on whoever lobbied hardest — a merit cycle has a defined start date, locked criteria, a fixed budget pool, and an end-to-end audit trail.\n\nThe distinction matters for three reasons:\n1. **Legal defensibility.** If an employee or regulator asks 'why did this person get 12% and that person get 3%?', you need a documented answer.\n2. **Budget control.** Without a defined pool and simulation step, companies consistently overshoot compensation budgets by 15–30%.\n3. **Retention.** Employees who understand the rules of the increment game are 2.4× more likely to stay than those who feel the decision was arbitrary (Mercer, 2025 Global Talent Trends)."
+            },
+            {
+              "h2": "The 7-Stage Merit Cycle Process",
+              "body": "Here is the end-to-end process used by HR teams that run merit cycles efficiently in mid-size companies (50–500 employees)."
+            },
+            {
+              "h3": "Stage 1: Define Cycle Scope and Budget Pool",
+              "body": "Before anything else, answer four questions:\n- **Who is eligible?** (departments, employment type, minimum tenure)\n- **What is the cycle window?** (12-month performance window, evaluation window)\n- **What is the total budget pool?** (expressed as % of total payroll or absolute amount)\n- **What is the distribution model?** (fixed %, tiered ranges, or budget-pool allocation)\n\nBudget pool decisions happen here — before criteria are written. This is critical. Most companies make the mistake of designing criteria first, then discovering the budget implications later."
+            },
+            {
+              "h3": "Stage 2: Build Increment Criteria",
+              "body": "Criteria are the measurable factors that determine each employee's increment tier. Best practice for a 50–500 employee company:\n\n| Criterion | Weight | Measurement Type |\n|---|---|---|\n| Performance Rating | 40% | Manager rating (1–5) |\n| Goal Achievement | 30% | % of OKRs/goals met |\n| Skill Development | 20% | Certification / project completion |\n| Tenure Multiplier | 10% | Years in role |\n\n**Key rule:** Weights must sum to 100%. Each criterion needs a clear data source (manager input, HR system, self-reported) and a scoring range.\n\nAlso define your tier structure:\n- **Tier 1 (Score 85–100):** 10–14% increment\n- **Tier 2 (Score 70–84):** 6–9% increment\n- **Tier 3 (Score 55–69):** 3–5% increment\n- **Below threshold (Score <55):** 0% increment"
+            },
+            {
+              "h3": "Stage 3: Run a Budget Simulation (Before Publishing Anything)",
+              "body": "This is the step most companies skip — and it's why they blow their budgets.\n\nBefore you publish the criteria to employees or managers, simulate the outcome using last year's performance data:\n\n**Question to answer in the simulation:** 'If we use these criteria and these tier thresholds, how many employees qualify for each tier, and what is the total payout?'\n\nRun at least three scenarios:\n- **Conservative:** Thresholds 5 points higher → fewer qualifiers → lower spend\n- **Baseline:** Your intended criteria as-is\n- **Liberal:** Thresholds 5 points lower → more qualifiers → higher spend\n\nIf the baseline scenario exceeds budget, adjust the criteria or tier thresholds **before** publishing. This is your one window to fine-tune without breaking employee trust.\n\nMeritCyc's Budget Simulation Engine does this automatically — you move sliders, and the projected spend, tier distribution, and per-department breakdown update in real time."
+            },
+            {
+              "h3": "Stage 4: Publish and Lock Criteria",
+              "body": "Once you're satisfied with the budget simulation results, publish the criteria to all eligible employees. At the moment of publication, criteria must be **locked** — immutable.\n\nWhy lock? Because if criteria can change after employees see them, you've destroyed trust in the system. The moment a manager realizes they can lobby for a criteria change to help a favorite team member, the entire merit cycle becomes political.\n\n**What 'locked' means in practice:**\n- Employees see exactly what criteria they'll be scored on and the weights.\n- Managers see the same criteria — no deviation.\n- No one (not even the Super Admin) can edit criteria once locked. Emergency changes require cancelling the cycle and starting fresh with a new audit trail.\n\nThis lock is enforced at the system level in MeritCyc — not just a policy statement in an email."
+            },
+            {
+              "h3": "Stage 5: Manager Evaluation Window",
+              "body": "With criteria locked and published, open a defined window (typically 2–3 weeks) for managers to score their direct reports. During this window:\n\n- Managers see each team member's profile alongside the locked criteria.\n- They input scores per criterion (the weighted total calculates automatically).\n- The system shows a live tier indicator as scores are entered.\n- Progress tracking lets HR see completion rates per department in real time.\n\n**Best practice:** Send deadline reminders at 7 days, 3 days, and 1 day remaining. Completion rates jump from ~60% to ~92% with automated reminders."
+            },
+            {
+              "h3": "Stage 6: HR Review, Fairness Check, and Finalization",
+              "body": "Before finalizing, HR runs a fairness review:\n\n1. **Score distribution by department** — are any managers clustering everyone at Tier 1 (grade inflation) or Tier 3 (punitive scoring)?\n2. **Gender and demographic parity** — do increment amounts differ systematically across protected groups?\n3. **Anomaly detection** — are there employees who scored high on all criteria but are placed in a lower tier than expected?\n\nFor flagged scores, HR can override with a documented justification. Every override is audit-logged.\n\nOnce the review is complete, finalize the cycle. This calculates final increment amounts, triggers payroll data export, and generates increment stories."
+            },
+            {
+              "h3": "Stage 7: Deliver Increment Stories to Employees",
+              "body": "The final step — and the one that separates transparent companies from opaque ones — is delivering a personalized increment story to every employee.\n\nAn increment story explains:\n- Which criteria were used and why (published, locked at cycle start)\n- How the employee scored on each criterion\n- Which tier they placed into and what that means\n- The exact increment percentage/amount\n- Specific, data-linked improvement recommendations for the next cycle\n\nThis single feature — the increment story — is what converts 'I got 4% and I don't know why' into 'I scored 71/100, placed in Tier 2, and here's exactly what I need to do to reach Tier 1 next year.' The retention impact is measurable."
+            },
+            {
+              "h2": "Common Mistakes to Avoid",
+              "body": "- **Setting criteria after looking at who you want to reward.** Always define criteria before knowing final scores.\n- **Skipping the simulation step.** Budget overruns almost always trace back to this skipped step.\n- **Allowing mid-cycle criteria edits.** Even small edits destroy trust and create audit exposure.\n- **No increment story.** Employees who receive no explanation are 3× more likely to start job-searching within 90 days.\n- **Manual spreadsheets.** Excel breaks company isolation, version control, and audit trail requirements simultaneously."
+            },
+            {
+              "h2": "How Long Does a Merit Cycle Take?",
+              "body": "| Phase | Duration |\n|---|---|\n| Criteria design and budget simulation | 1–2 weeks |\n| Employee notification + lock | 1 day |\n| Manager evaluation window | 2–3 weeks |\n| HR review and fairness check | 3–5 days |\n| Finalization and increment story delivery | 1–2 days |\n| **Total** | **5–8 weeks** |\n\nCompanies using manual spreadsheets typically spend 8–14 weeks. Automated merit cycle platforms like MeritCyc compress this to 4–6 weeks by eliminating data collection lag, score aggregation, and manual story writing."
+            },
+            {
+              "h2": "Running Your First Merit Cycle? Start Here.",
+              "body": "If this is your company's first structured merit cycle, don't try to design the perfect system on cycle one. Instead:\n\n1. Start with 3–4 criteria, not 8–10.\n2. Use a single tier structure (Tier 1/2/3) before experimenting with 5+ tiers.\n3. Run the budget simulation multiple times — it's free to adjust before publishing.\n4. Document every decision, even ones you make verbally.\n5. Collect employee feedback after the first cycle and use it to improve cycle two.\n\nMeritCyc is built specifically for this journey — from your first cycle to your fiftieth."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Run Your Next Merit Cycle with MeritCyc",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Try the Free Merit Budget Calculator",
+            "url": "https://meritcyc.com/tools/merit-budget-calculator",
+            "placement": "after_stage_3_section"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "Budget Simulation Engine",
+            "url": "/features/budget-simulation"
+          },
+          { "anchor": "criteria lock", "url": "/features/criteria-lock" },
+          {
+            "anchor": "increment stories",
+            "url": "/features/increment-stories"
+          },
+          {
+            "anchor": "merit cycle software",
+            "url": "/blog/merit-cycle-software"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 2,
+      "meta": {
+        "title": "Best Merit Cycle Software for Mid-Size Companies in 2026 (Compared)",
+        "slug": "merit-cycle-software",
+        "canonical_url": "https://meritcyc.com/blog/merit-cycle-software",
+        "meta_description": "Comparing the best merit cycle software for companies with 50–500 employees in 2026. Covers MeritCyc, OpenComp, Aeqium, Compport, HRSoft, and Pave — with feature breakdowns, pricing, and honest verdict.",
+        "meta_keywords": [
+          "merit cycle software",
+          "merit cycle management tool",
+          "compensation cycle software",
+          "best merit increase software"
+        ],
+        "og_title": "Best Merit Cycle Software in 2026: Compared for Mid-Size Companies",
+        "og_description": "Side-by-side comparison of merit cycle software built for 50–500 employee companies. Budget simulation, criteria lock, fairness audit, and more.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/merit-cycle-software-comparison.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Best Merit Cycle Software 2026 — Mid-Market Comparison",
+        "twitter_description": "MeritCyc vs OpenComp vs Aeqium vs Compport vs Pave vs HRSoft. Full feature breakdown for HR teams at 50–500 employee companies.",
+        "schema_type": "Article",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Best Merit Cycle Software for Mid-Size Companies in 2026",
+          "description": "A comprehensive comparison of merit cycle software platforms for companies with 50–500 employees.",
+          "author": { "@type": "Organization", "name": "MeritCyc" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MeritCyc",
+            "url": "https://meritcyc.com"
+          }
+        }
+      },
+      "content": {
+        "category": "Comparisons",
+        "funnel_stage": "BOFU",
+        "target_keyword": "merit cycle software",
+        "primary_search_volume_us": 110,
+        "keyword_difficulty": 22,
+        "secondary_keywords": [
+          "merit cycle management tool",
+          "compensation cycle software",
+          "best merit increase software",
+          "merit increase software 2026",
+          "salary increment management software"
+        ],
+        "word_count_target": 2800,
+        "reading_time_minutes": 14,
+        "suggested_publish_date": "2026-06-09",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "People Operations",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "Best Merit Cycle Software for Mid-Size Companies in 2026 (Compared)",
+          "intro": "Mid-size HR teams face a specific problem when searching for merit cycle software: the enterprise tools (Workday, SAP SuccessFactors, beqom) are overkill and cost $100K+ annually, while the lightweight performance tools (Lattice, 15Five) bolt on a compensation tab that barely covers the basics. This comparison focuses exclusively on platforms that were built — or are genuinely optimized — for the 50–500 employee merit cycle use case.",
+          "sections": [
+            {
+              "h2": "What Makes a Merit Cycle Tool Different from General Compensation Software?",
+              "body": "General compensation software (Pave, Radford, CompAnalyst) focuses on benchmarking — answering 'are we paying market rate?' Merit cycle software focuses on the workflow — answering 'how do we run a structured, fair, budget-safe increment process?'\n\nThe best platforms do both, but for most 50–500 employee companies, the workflow problem is more urgent. They already have salary data. They don't have a defensible, transparent process for distributing increments."
+            },
+            {
+              "h2": "The 6 Features That Matter Most in Merit Cycle Software",
+              "body": "Before comparing platforms, here are the six capabilities that actually determine whether a merit cycle tool works:\n\n1. **Budget Simulation** — Can HR model the financial outcome of different criteria before publishing?\n2. **Criteria Lock** — Once published, are criteria truly immutable? Or can anyone edit them?\n3. **Weighted Scoring** — Can criteria be weighted with automatic tier calculation?\n4. **Fairness Audit** — Does the system flag demographic pay disparities automatically?\n5. **Employee Transparency** — Do employees see the criteria, their scores, and a personalized explanation?\n6. **Mid-Market Pricing** — Is it actually affordable for a 100–300 employee company without an enterprise procurement process?"
+            },
+            {
+              "h2": "Merit Cycle Software Compared: 2026",
+              "body": "| Feature | MeritCyc | OpenComp | Aeqium | Compport | HRSoft | Pave |\n|---|---|---|---|---|---|---|\n| **Budget Simulation** | Full (pre-publish) | Partial | No | Partial | Partial | No |\n| **Criteria Lock** | Yes (enforced) | No | No | No | No | No |\n| **Weighted Scoring** | Yes | Yes | Yes | Yes | Yes | Yes |\n| **Fairness / Pay Equity Audit** | Automated | Partial | No | Partial | No | No |\n| **Employee Increment Story** | Yes (personalized) | No | No | No | No | No |\n| **Career Progression Map** | Yes | No | No | No | No | No |\n| **Self-Registration / QR Onboarding** | Yes | No | No | No | No | No |\n| **PEPM Pricing (transparent)** | $3–$12 | Quoted only | Quoted only | Quoted only | Quoted only | Quoted only |\n| **Mid-Market Sweet Spot** | 50–500 | 500–5,000 | 100–1,000 | 500–5,000 | 1,000+ | 50–500 |\n| **EU Pay Transparency Ready** | Yes (roadmap Q3) | No | No | Partial | Partial | No |"
+            },
+            {
+              "h2": "Platform Deep Dives",
+              "body": ""
+            },
+            {
+              "h3": "MeritCyc",
+              "body": "**Best for:** Companies that want budget simulation + criteria lock as non-negotiables.\n\nMeritCyc is built from the ground up around two problems that every other platform leaves unsolved: (1) the budget overrun that happens when HR sets criteria without simulating the financial outcome, and (2) the trust collapse that happens when criteria change mid-cycle.\n\nThe Budget Simulation Engine lets HR run what-if scenarios before any criteria are published — adjusting tier thresholds, weights, and budget pools while seeing projected spend update in real time. The Criteria Lock enforces immutability at the system level, not just policy: once published, no one can edit criteria, and emergency changes require cancelling the cycle with a full audit trail.\n\nFor employees, MeritCyc generates personalized Increment Stories — narrative explanations of every increment decision with specific improvement suggestions for the next cycle.\n\n**Pricing:** $3–$12/employee/month across three tiers. 14-day free trial on Growth plan.\n**Ideal company size:** 50–500 employees."
+            },
+            {
+              "h3": "OpenComp",
+              "body": "**Best for:** Companies prioritizing benchmarking data over process workflow.\n\nOpenComp combines compensation benchmarking with a basic merit cycle workflow. Its data layer is strong — particularly for tech companies — but the process controls are shallow. There is no equivalent to MeritCyc's criteria lock or budget simulation. Employee-facing transparency features are minimal.\n\n**Pricing:** Custom quoted. Typically $15–$25K/year for mid-size companies.\n**Ideal company size:** 200–2,000 employees."
+            },
+            {
+              "h3": "Aeqium",
+              "body": "**Best for:** HR teams that need a modern UI and basic comp cycle management.\n\nAeqium is a newer entrant with a clean interface and solid mid-market positioning. It handles merit cycles adequately but lacks pre-publish budget simulation and any form of criteria immutability. It compensates with strong AI-generated insights and a good manager experience.\n\n**Pricing:** Custom quoted. Typically $10–$20K/year.\n**Ideal company size:** 100–1,000 employees."
+            },
+            {
+              "h3": "Pave",
+              "body": "**Best for:** Companies that primarily need market benchmarking with compensation workflow as a secondary use case.\n\nPave's strongest asset is its real-time compensation benchmarking data — fed by a network of companies sharing payroll data. Its merit cycle features are functional but not deep. No budget simulation before publishing. No criteria lock. Employee-facing features are minimal.\n\n**Pricing:** Custom quoted. Typically $15–$30K/year.\n**Ideal company size:** 50–500 employees (growth-stage tech companies)."
+            },
+            {
+              "h3": "HRSoft",
+              "body": "**Best for:** Enterprise HR teams running complex compensation programs (LTI, bonus, base).\n\nHRSoft is enterprise-grade — powerful but heavy. Implementation takes months, pricing requires procurement approval, and the interface reflects its legacy architecture. For a 50–500 employee company, it's almost certainly overkill.\n\n**Pricing:** Enterprise quoted. Typically $30K–$100K+/year.\n**Ideal company size:** 1,000+ employees."
+            },
+            {
+              "h2": "How to Choose: 3 Questions to Ask Any Vendor",
+              "body": "1. **'Can I simulate the budget impact of my criteria before employees see them?'** If the answer is 'not really' or 'we have a basic version', you'll experience budget surprises.\n2. **'Once I publish criteria, can they be edited?'** If yes, you have a fairness and legal exposure problem waiting to happen.\n3. **'What do employees see after their increment is decided?'** If the answer is 'just the percentage in their payslip', you're missing the retention benefit of the entire cycle."
+            },
+            {
+              "h2": "Our Verdict",
+              "body": "For companies with 50–500 employees that want a purpose-built merit cycle tool with real budget simulation and enforced criteria integrity, MeritCyc is the only platform in 2026 that treats these as core product features rather than nice-to-haves.\n\nFor companies with 500+ employees that primarily need compensation benchmarking, OpenComp or Pave are reasonable choices — with the caveat that they solve a different problem.\n\nFor companies with 1,000+ employees running complex total comp programs (base + bonus + LTI), HRSoft or beqom are the enterprise-appropriate choices."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Start Your Free MeritCyc Trial",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "See How Budget Simulation Works",
+            "url": "https://meritcyc.com/features/budget-simulation",
+            "placement": "after_comparison_table"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "how to run a merit cycle",
+            "url": "/blog/how-to-run-a-merit-cycle"
+          },
+          {
+            "anchor": "budget simulation",
+            "url": "/features/budget-simulation"
+          },
+          { "anchor": "criteria lock", "url": "/features/criteria-lock" },
+          { "anchor": "Pave alternatives", "url": "/blog/pave-alternatives" }
+        ]
+      }
+    },
+
+    {
+      "id": 3,
+      "meta": {
+        "title": "Salary Increment Software for Mid-Size Companies: What to Look For in 2026",
+        "slug": "salary-increment-software-mid-size-companies",
+        "canonical_url": "https://meritcyc.com/blog/salary-increment-software-mid-size-companies",
+        "meta_description": "The complete buyer's guide to salary increment software for companies with 50–500 employees. Learn what features matter, what to avoid, and why generic HR platforms fall short.",
+        "meta_keywords": [
+          "salary increment software",
+          "salary increment management",
+          "salary review software",
+          "compensation cycle tool",
+          "HR increment software"
+        ],
+        "og_title": "Salary Increment Software for Mid-Size Companies: 2026 Buyer's Guide",
+        "og_description": "Why generic HR platforms fail the increment problem — and what purpose-built salary increment software actually looks like for 50–500 employee companies.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/salary-increment-software.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Salary Increment Software for 50–500 Employee Companies (2026 Guide)",
+        "twitter_description": "The buyer's guide HR Directors actually need. What features matter in salary increment software, what to skip, and how to evaluate vendors.",
+        "schema_type": "Article",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Salary Increment Software for Mid-Size Companies: What to Look For in 2026",
+          "description": "A buyer's guide for HR teams at 50–500 employee companies evaluating salary increment software.",
+          "author": { "@type": "Organization", "name": "MeritCyc" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MeritCyc",
+            "url": "https://meritcyc.com"
+          }
+        }
+      },
+      "content": {
+        "category": "Buyer's Guides",
+        "funnel_stage": "BOFU",
+        "target_keyword": "salary increment software",
+        "primary_search_volume_us": 90,
+        "keyword_difficulty": 18,
+        "secondary_keywords": [
+          "salary increment management software",
+          "salary review software",
+          "pay raise management software",
+          "compensation review software",
+          "HR salary tool"
+        ],
+        "word_count_target": 2400,
+        "reading_time_minutes": 12,
+        "suggested_publish_date": "2026-06-16",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "People Operations",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "Salary Increment Software for Mid-Size Companies: What to Look For in 2026",
+          "intro": "If you've Googled 'salary increment software' recently, you've encountered two disappointing categories of results: Indian HRMS vendors bundling increments as a payroll module, and enterprise compensation platforms with pricing pages that say 'contact sales.' Neither is built for a 150-person professional services firm or a 300-person tech scaleup. This guide is.",
+          "sections": [
+            {
+              "h2": "The Real Problem: Why Mid-Size Companies Need Dedicated Increment Software",
+              "body": "Companies with 50–500 employees sit in a specific HR maturity gap. They're too large for informal increment conversations (which become inconsistent and legally risky at scale) and too small for enterprise compensation platforms (which require dedicated CHRO teams, implementation partners, and six-figure contracts).\n\nThe result is an over-reliance on spreadsheets. And spreadsheets fail the increment problem in four predictable ways:\n\n- **No simulation capability.** You can't model what happens to your budget if 60% of employees hit Tier 1 before publishing criteria.\n- **No integrity controls.** Any manager with access can change formulas, weights, or scores.\n- **No audit trail.** When an employee asks why they received 4%, you can't prove the decision was consistent.\n- **No employee communication.** Spreadsheets end at the number. They don't explain the 'why.'"
+            },
+            {
+              "h2": "6 Features That Define Good Salary Increment Software",
+              "body": ""
+            },
+            {
+              "h3": "1. Pre-Publish Budget Simulation",
+              "body": "This is the feature that separates increment-specific software from general HR tools. Before any criteria are visible to employees or managers, HR should be able to run financial simulations: 'If we use these weights and thresholds, how many employees land in each tier, and what is the total cost?'\n\nThis matters because increment criteria and budget are interdependent. If you design criteria first and simulate later, you'll either overshoot budget or scramble to adjust criteria after employees already know about them — destroying trust in the process."
+            },
+            {
+              "h3": "2. Criteria Lock (Immutable After Publishing)",
+              "body": "Once increment criteria are published to employees, they must not change. This isn't just a policy preference — it's increasingly a legal requirement under pay transparency regulations in the EU, UK, and several US states.\n\nIn software terms, 'lock' means the system physically prevents criteria edits after the publish event, creates a timestamped audit record, and requires cycle cancellation (not editing) for any emergency changes."
+            },
+            {
+              "h3": "3. Weighted Scoring with Automatic Tier Placement",
+              "body": "Managers should score employees against each criterion. The software should automatically calculate the weighted composite score and assign a tier. This removes manual math, eliminates formula errors, and prevents gaming (no manager can manually assign a higher tier without the underlying scores supporting it)."
+            },
+            {
+              "h3": "4. Fairness and Pay Equity Checks",
+              "body": "Before finalization, the system should surface: gender pay gaps within the increment distribution, department-level scoring anomalies (grade inflation / deflation), and protected group parity metrics. In 2026, this isn't optional — the EU Pay Transparency Directive requires annual joint pay assessments for companies with 150+ employees, and UK action-plan reporting becomes mandatory in 2027."
+            },
+            {
+              "h3": "5. Employee Transparency Portal",
+              "body": "Employees should see their criteria, their scores, their tier, their increment amount, and — critically — personalized improvement recommendations for the next cycle. This is the feature with the highest direct retention impact. Employees who understand the rules and see a path forward stay longer."
+            },
+            {
+              "h3": "6. Transparent, Per-Employee Pricing",
+              "body": "Enterprise comp platforms quote on request, making budget approval painful for HR Directors at mid-size companies. Good increment software publishes per-employee-per-month pricing that a department head can approve without procurement — typically $3–$12/PEPM for a 50–500 employee company."
+            },
+            {
+              "h2": "Red Flags When Evaluating Increment Software",
+              "body": "Avoid any platform that:\n- **Cannot simulate budget impact before publishing.** This means it's solving a record-keeping problem, not an increment intelligence problem.\n- **Allows criteria editing after employee notification.** This is a legal and trust liability.\n- **Has no employee-facing output.** If the only thing employees see is a number in their payslip, the platform is just a manager tool.\n- **Requires a 6-month implementation.** Mid-size companies can't wait. Good software onboards in days.\n- **Prices only on enterprise contracts.** Budget approval for HR tools at mid-size companies should not require legal and procurement."
+            },
+            {
+              "h2": "MeritCyc: Salary Increment Software Built for 50–500 Employee Companies",
+              "body": "MeritCyc was designed specifically for the mid-market increment problem. It is not a payroll module, not a performance review tool with a comp tab, and not an enterprise compensation platform with a mid-market pricing page.\n\nIt is a dedicated Salary Increment Intelligence Platform with:\n- A Budget Simulation Engine that runs financial scenarios before any criteria are published\n- A Criteria Lock that is enforced at the system level — not just a policy note\n- Weighted scoring with automatic tier placement\n- An automated Fairness Audit covering gender, department, and band parity\n- Personalized Increment Stories delivered to every employee\n- Transparent pricing: $3–$12/employee/month\n\nCompanies using MeritCyc report average merit cycle completion time dropping from 11 weeks (manual) to 5 weeks."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "See MeritCyc in Action — Free 14-Day Trial",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Download the Salary Increment Buyer's Checklist",
+            "url": "https://meritcyc.com/resources/increment-software-checklist",
+            "placement": "after_red_flags_section"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "how to run a merit cycle",
+            "url": "/blog/how-to-run-a-merit-cycle"
+          },
+          {
+            "anchor": "merit cycle software comparison",
+            "url": "/blog/merit-cycle-software"
+          },
+          {
+            "anchor": "EU Pay Transparency Directive",
+            "url": "/blog/eu-pay-transparency-directive-2026"
+          },
+          {
+            "anchor": "budget simulation",
+            "url": "/features/budget-simulation"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 4,
+      "meta": {
+        "title": "EU Pay Transparency Directive 2026: A Complete Guide for HR Leaders",
+        "slug": "eu-pay-transparency-directive-2026",
+        "canonical_url": "https://meritcyc.com/blog/eu-pay-transparency-directive-2026",
+        "meta_description": "Everything HR leaders need to know about the EU Pay Transparency Directive (2023/970). Deadlines, Article-by-Article requirements, member state transposition status, and what you need to do before 2027.",
+        "meta_keywords": [
+          "EU pay transparency directive",
+          "EU pay transparency directive 2026",
+          "pay transparency directive compliance",
+          "Directive 2023/970",
+          "EU pay gap reporting"
+        ],
+        "og_title": "EU Pay Transparency Directive 2026: Complete HR Compliance Guide",
+        "og_description": "Member state transposition deadline passed June 2026. First reporting cycle starts 2027. Is your company ready? Full Article-by-Article breakdown for HR leaders.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/eu-pay-transparency-directive.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "EU Pay Transparency Directive 2026 — What HR Leaders Must Know",
+        "twitter_description": "Transposition deadline: June 7, 2026. First reporting: 2027. Article 7 right to information, Article 10 joint pay assessment, pay gap thresholds explained.",
+        "schema_type": "Article",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "EU Pay Transparency Directive 2026: A Complete Guide for HR Leaders",
+          "description": "A comprehensive, Article-by-Article guide to the EU Pay Transparency Directive (2023/970) for HR teams managing employees across EU member states.",
+          "author": { "@type": "Organization", "name": "MeritCyc" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MeritCyc",
+            "url": "https://meritcyc.com"
+          },
+          "datePublished": "2026-06-23"
+        }
+      },
+      "content": {
+        "category": "Compliance",
+        "funnel_stage": "TOFU / MOFU",
+        "target_keyword": "EU pay transparency directive 2026",
+        "primary_search_volume_us": 2400,
+        "keyword_difficulty": 40,
+        "secondary_keywords": [
+          "EU pay transparency directive",
+          "Directive 2023/970",
+          "pay transparency directive compliance",
+          "EU pay gap reporting",
+          "Article 7 right to information",
+          "joint pay assessment"
+        ],
+        "word_count_target": 3500,
+        "reading_time_minutes": 17,
+        "suggested_publish_date": "2026-06-23",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "Compliance & HR Technology",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "EU Pay Transparency Directive 2026: A Complete Guide for HR Leaders",
+          "intro": "The EU Pay Transparency Directive (Directive 2023/970/EU) became law across the European Union in June 2023 with a member state transposition deadline of June 7, 2026. The first pay gap reporting cycle under the Directive is due in 2027. If your company employs people in any EU member state — or if you're a multinational with EU subsidiaries — this Directive changes how you must design, communicate, and report on compensation.",
+          "sections": [
+            {
+              "h2": "What Is the EU Pay Transparency Directive?",
+              "body": "The EU Pay Transparency Directive (officially Directive 2023/970/EU, also called the 'Pay Transparency Directive' or 'PTD') is EU-wide legislation designed to reduce the gender pay gap across all 27 EU member states. It does this by:\n\n1. Requiring employers to proactively disclose pay ranges in job postings\n2. Giving employees the right to request comparative pay information\n3. Mandating annual pay gap reporting for larger employers\n4. Requiring joint pay assessments when the pay gap exceeds 5%\n5. Prohibiting pay history questions during recruitment\n6. Establishing equal pay as an enforceable individual right\n\nThis is the most significant piece of compensation legislation in the EU since the Equal Pay Directive of 1975, and the first to put enforcement obligations directly on employers rather than member states."
+            },
+            {
+              "h2": "Key Dates and Timelines",
+              "body": "| Milestone | Date |\n|---|---|\n| Directive adopted by EU Parliament | April 24, 2023 |\n| Directive published in Official Journal | May 17, 2023 |\n| **Member state transposition deadline** | **June 7, 2026** |\n| First pay gap reports due (250+ employees) | 2027 (for 2026 data) |\n| Pay gap reports due (100–249 employees) | 2031 (phased in) |\n| Pay gap reports due (50–99 employees) | Phased by member state |"
+            },
+            {
+              "h2": "Who Does the Directive Apply To?",
+              "body": "The Directive applies to all employers in EU member states — public and private sector. However, the reporting requirements are tiered by company size:\n\n- **250+ employees:** Annual pay gap reporting from 2027\n- **100–249 employees:** Pay gap reporting from 2031 (or earlier if member state opts in)\n- **50–99 employees:** No mandatory pay gap reporting, but pay range disclosure and the right to information apply immediately upon transposition\n- **<50 employees:** No pay gap reporting, but the right-to-information provisions apply\n\n**Critical nuance for multinationals:** If your company has a subsidiary or branch employing workers in an EU member state, that entity is subject to the Directive's requirements — even if your HQ is in the US, UK, or Australia."
+            },
+            {
+              "h2": "Article-by-Article Breakdown",
+              "body": ""
+            },
+            {
+              "h3": "Article 5 — Pay Transparency Before Employment",
+              "body": "Employers must indicate the pay or pay range in job postings for all advertised roles. The range must represent the actual pay range for the role — not a token 'competitive' field. Employers may not ask candidates about their pay history at any stage of recruitment."
+            },
+            {
+              "h3": "Article 6 — Transparency on Pay-Setting",
+              "body": "Workers must have access to the criteria used to determine their pay. These criteria must be objective, gender-neutral, and documented. Employers must make them accessible without requiring a formal request — they should be embedded in employment contracts, HR policies, or an accessible internal portal."
+            },
+            {
+              "h3": "Article 7 — Right to Information",
+              "body": "Any worker may request information about:\n- Their own pay level and the criteria used to set it\n- The average pay level for workers doing the same work or work of equal value, broken down by gender\n\nEmployers must respond within two months. Employers may not discourage workers from making this request or take adverse action against those who do.\n\n**What this means for your merit cycle:** Every increment decision must be traceable to documented, objective criteria. If a worker requests their pay information under Article 7 and you cannot demonstrate that their increment was determined by the same criteria applied to peers of different genders, you are exposed."
+            },
+            {
+              "h3": "Article 9 — Reporting on the Gender Pay Gap",
+              "body": "Companies with 100+ employees (threshold varies by member state during phase-in) must report annually on the gender pay gap. Required metrics include:\n- Mean and median pay gap (base pay)\n- Mean and median gap in total comp (including variable pay)\n- Proportion of male vs. female workers in each quartile pay band\n- Pay gap within each quartile\n- Parental leave usage and pay gap\n\nReports must be submitted to the relevant national authority and published publicly. The European Labour Authority will aggregate reports into a central EU database."
+            },
+            {
+              "h3": "Article 10 — Joint Pay Assessment",
+              "body": "This is the most operationally complex requirement. If the reported pay gap (under Article 9) exceeds **5%** and cannot be objectively justified by gender-neutral criteria, the employer must conduct a joint pay assessment in cooperation with employee representatives.\n\nThe joint pay assessment must:\n- Identify the causes of the pay gap\n- Identify the job categories affected\n- Establish remediation measures with a clear timeline\n- Be reviewed within a reasonable period (typically 3 years)\n\n**This directly impacts how you run merit cycles.** If your merit cycle produces systematically different increment outcomes for male and female employees — even unintentionally — you may trigger an Article 10 joint pay assessment."
+            },
+            {
+              "h2": "What the Directive Does NOT Require",
+              "body": "There is significant confusion about scope. The Directive does NOT require:\n- Disclosing individual employees' salaries publicly\n- Full pay transparency across all employees (only aggregated reports)\n- Disclosure of pay ranges beyond what was advertised for a role\n- Renegotiating existing employment contracts immediately\n\nWhat it does require is that your pay-setting systems — including merit cycles — are based on documented, objective, gender-neutral criteria that you can defend."
+            },
+            {
+              "h2": "Member State Transposition: Where Things Stand in June 2026",
+              "body": "June 7, 2026 was the transposition deadline. Member states that did not transpose by this date face infringement proceedings from the European Commission, and in most cases, the Directive's provisions have direct effect — meaning workers may invoke them even without national implementing legislation.\n\nTransposition status varies significantly:\n- **Early transposers (already in force):** Netherlands, Sweden, Denmark\n- **On-deadline transposers (June 2026):** Germany, France, Spain, Ireland, Austria, Belgium\n- **Delayed/partial (infringement risk):** Several member states — HR teams operating in these countries should consult local legal counsel immediately\n\nFor up-to-date member state status, consult the European Labour Authority's transposition tracker."
+            },
+            {
+              "h2": "How to Prepare Your Compensation Program for the Directive",
+              "body": "1. **Audit your current pay criteria.** Are increment decisions based on documented, objective criteria? Or are they manager-discretionary?\n2. **Establish pay ranges for all roles.** If you don't have salary bands, create them before your next hiring cycle.\n3. **Run a pay gap analysis now.** Identify gaps before regulators do. Use the corrected pay gap metric (same or equal-value work) not just overall mean gap.\n4. **Make criteria visible to employees.** Under Article 6, workers must be able to access pay-setting criteria without a formal request.\n5. **Document your merit cycle.** Every increment decision should trace to locked, published criteria.\n6. **Prepare for Article 7 requests.** Build a process for responding to pay information requests within two months.\n\nMeritCyc's platform addresses points 1, 3, 4, 5, and 6 directly — with criteria lock, fairness audit, and the employee transparency portal."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Prepare Your Merit Cycles for Pay Transparency Compliance",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Download the EU Pay Transparency Directive Readiness Checklist",
+            "url": "https://meritcyc.com/resources/eu-directive-checklist",
+            "placement": "after_key_dates_section"
+          }
+        },
+        "internal_links": [
+          { "anchor": "criteria lock", "url": "/features/criteria-lock" },
+          { "anchor": "fairness audit", "url": "/features/fairness-audit" },
+          {
+            "anchor": "salary increment software",
+            "url": "/blog/salary-increment-software-mid-size-companies"
+          },
+          {
+            "anchor": "pay transparency software",
+            "url": "/features/pay-transparency"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 5,
+      "meta": {
+        "title": "Average Merit Increase 2026: What HR Data Shows Across Industries",
+        "slug": "average-merit-increase-2026",
+        "canonical_url": "https://meritcyc.com/blog/average-merit-increase-2026",
+        "meta_description": "What is the average merit increase in 2026? Data from Mercer, WTW, Aon, and Payscale surveys analyzed by industry, company size, and region. Plus how to benchmark your merit budget.",
+        "meta_keywords": [
+          "average merit increase 2026",
+          "typical merit increase 2026",
+          "salary increase 2026",
+          "merit increase benchmarks 2026",
+          "compensation increase 2026"
+        ],
+        "og_title": "Average Merit Increase 2026: Industry-by-Industry Data",
+        "og_description": "2026 merit increase data from Mercer, WTW, Aon, and Payscale. Tech, finance, healthcare, professional services, and manufacturing benchmarks — plus how mid-size HR teams should use this data.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/average-merit-increase-2026.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Average Merit Increase 2026 — What the Data Says",
+        "twitter_description": "Mercer, WTW, Aon, Payscale surveys analyzed. Tech, healthcare, finance, manufacturing benchmarks for 2026 merit budgets.",
+        "schema_type": "Article",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Average Merit Increase 2026: What HR Data Shows Across Industries",
+          "description": "Analysis of 2026 merit increase budgets from major compensation surveys, broken down by industry and company size.",
+          "author": { "@type": "Organization", "name": "MeritCyc" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MeritCyc",
+            "url": "https://meritcyc.com"
+          },
+          "datePublished": "2026-01-15"
+        }
+      },
+      "content": {
+        "category": "Data & Benchmarks",
+        "funnel_stage": "TOFU",
+        "target_keyword": "average merit increase 2026",
+        "primary_search_volume_us": 2400,
+        "keyword_difficulty": 30,
+        "secondary_keywords": [
+          "typical merit increase 2026",
+          "salary increase 2026",
+          "merit increase budget 2026",
+          "merit pay statistics",
+          "how much merit increase"
+        ],
+        "word_count_target": 2000,
+        "reading_time_minutes": 10,
+        "suggested_publish_date": "2026-01-15",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "Compensation Research",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "Average Merit Increase 2026: What HR Data Shows Across Industries",
+          "intro": "Every year, major compensation consulting firms — Mercer, Willis Towers Watson (WTW), Aon, and Payscale — survey thousands of companies about their planned merit increase budgets. Here is what 2026 data shows, how it varies by industry and company size, and how HR leaders at mid-size companies should translate these benchmarks into actual increment criteria.",
+          "sections": [
+            {
+              "h2": "2026 Average Merit Increase: The Headlines",
+              "body": "Based on 2025–2026 compensation survey data from major consulting firms:\n\n| Survey | 2026 Average Merit Budget | Prior Year (2025) |\n|---|---|---|\n| Mercer TRS | 3.5% | 3.7% |\n| WTW Salary Budget Survey | 3.5% | 3.8% |\n| Aon Global Salary Increase Survey | 3.6% | 3.9% |\n| Payscale Compensation Best Practices | 3.4% | 3.6% |\n\nThe consistent signal: merit budgets are moderating slightly after the 2022–2023 inflation spike pushed many companies above 4%. The 2026 median is settling back toward the historical 3.0–3.5% range for most industries.\n\n**Important distinction:** 'Merit budget' is the pool available. Actual per-employee increases vary significantly based on performance tier placement. Top performers typically receive 5–8%+ while at-threshold performers receive 1–3%."
+            },
+            {
+              "h2": "Average Merit Increase by Industry (2026)",
+              "body": "| Industry | Avg Merit Budget | Range (P25–P75) |\n|---|---|---|\n| Technology / Software | 4.2% | 3.0%–6.5% |\n| Financial Services | 3.8% | 3.0%–5.5% |\n| Healthcare / Life Sciences | 3.5% | 2.5%–5.0% |\n| Professional Services | 3.5% | 2.5%–4.5% |\n| Manufacturing | 3.3% | 2.5%–4.5% |\n| Retail / Consumer | 3.0% | 2.0%–4.0% |\n| Nonprofit | 2.8% | 2.0%–3.5% |\n| Energy / Utilities | 3.4% | 2.5%–4.5% |\n\nTechnology remains the highest-budget industry — driven by retention competition and continued demand for engineering talent despite 2024 tech layoffs normalizing the market."
+            },
+            {
+              "h2": "Average Merit Increase by Company Size",
+              "body": "| Company Size | Avg Merit Budget |\n|---|---|\n| <100 employees | 3.2% |\n| 100–499 employees | 3.4% |\n| 500–999 employees | 3.5% |\n| 1,000–4,999 employees | 3.6% |\n| 5,000+ employees | 3.7% |\n\nLarger companies consistently report higher average budgets — partly because they have dedicated compensation teams that benchmark rigorously, and partly because their talent competition is broader."
+            },
+            {
+              "h2": "How Merit Budgets Translate to Tier Ranges",
+              "body": "A 3.5% average merit budget does not mean everyone gets 3.5%. The distribution across performance tiers typically looks like this for a differentiated merit program:\n\n| Tier | % of Workforce | Increment Range | Budget Weight |\n|---|---|---|---|\n| Tier 1 (Exceptional) | 10–15% | 6–9% | ~30% of pool |\n| Tier 2 (Exceeds) | 25–30% | 4–6% | ~35% of pool |\n| Tier 3 (Meets) | 45–55% | 2–3.5% | ~30% of pool |\n| Below threshold | 10–15% | 0–1% | ~5% of pool |\n\nThis means the 3.5% average is a weighted result of a wide distribution. Your merit cycle criteria and tier thresholds determine where employees land — which is exactly why budget simulation before publishing criteria is non-negotiable."
+            },
+            {
+              "h2": "Regional Merit Increase Benchmarks",
+              "body": "| Region | 2026 Avg Merit Increase |\n|---|---|\n| United States | 3.5% |\n| United Kingdom | 3.2% |\n| Germany | 3.0% |\n| France | 2.8% |\n| Netherlands | 3.1% |\n| Australia | 3.4% |\n| South Korea | 4.5% |\n| Japan | 2.5% (base) + 1–3% 베이스업 |\n| India | 8.5% (inflation-adjusted higher) |\n| Southeast Asia | 6–8% (market-dependent) |"
+            },
+            {
+              "h2": "How to Use Industry Benchmarks in Your Merit Cycle",
+              "body": "Benchmark data is a starting point — not a mandate. Here is how to use it correctly:\n\n1. **Set your budget pool** from your industry/size benchmark, adjusted for your company's financial position and retention risk.\n2. **Simulate your criteria** against last year's performance data to confirm the pool will be distributed as intended.\n3. **Differentiate meaningfully.** A 3.5% average budget that results in everyone getting 3–4% is not a merit system — it's an across-the-board increase. The point of a merit cycle is to reward high performers proportionally more.\n4. **Communicate the budget context to managers** — not just the criteria weights. When managers understand the total budget available, their scoring tends to be more calibrated.\n5. **Benchmark your increment stories.** After each cycle, analyze whether your tier distribution matched your planned budget — and adjust thresholds for the next cycle based on actual outcomes."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Model Your 2026 Merit Budget with MeritCyc's Simulation Engine",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Try the Free Merit Budget Calculator",
+            "url": "https://meritcyc.com/tools/merit-budget-calculator",
+            "placement": "after_tier_distribution_section"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "budget simulation before publishing criteria",
+            "url": "/features/budget-simulation"
+          },
+          {
+            "anchor": "how to run a merit cycle",
+            "url": "/blog/how-to-run-a-merit-cycle"
+          },
+          {
+            "anchor": "merit matrix template",
+            "url": "/blog/merit-matrix-template"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 6,
+      "meta": {
+        "title": "Merit Matrix Template: How to Build One (Free Download + Examples)",
+        "slug": "merit-matrix-template",
+        "canonical_url": "https://meritcyc.com/blog/merit-matrix-template",
+        "meta_description": "Download a free merit matrix template and learn how to configure it for your company size and budget. Includes 9-box, 4-box, and modern weighted-score examples with tier increment ranges.",
+        "meta_keywords": [
+          "merit matrix template",
+          "merit matrix",
+          "merit increase matrix",
+          "salary increase matrix",
+          "performance increment matrix"
+        ],
+        "og_title": "Merit Matrix Template: Free Download + 3 Configurations",
+        "og_description": "Free merit matrix templates for 50–500 employee companies. 9-box, 4-box, and weighted score versions — with tier thresholds, increment ranges, and budget calculation built in.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/merit-matrix-template.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Free Merit Matrix Template — 3 Configurations for Mid-Size Companies",
+        "twitter_description": "9-box, 4-box, and weighted-score merit matrices with increment ranges. Free download + step-by-step guide.",
+        "schema_type": "HowTo",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to Build a Merit Matrix",
+          "description": "Step-by-step guide to building a merit matrix with appropriate tier thresholds and increment ranges for your company.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Choose your matrix structure",
+              "text": "Select between a 9-box, 4-box, or weighted score approach based on your company size and process maturity."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Define performance and potential axes",
+              "text": "Map what each level on the matrix means in measurable terms."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Assign increment ranges per cell",
+              "text": "Link each matrix position to a salary increment range within your budget."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Simulate the budget impact",
+              "text": "Before publishing, model how many employees land in each cell."
+            }
+          ]
+        }
+      },
+      "content": {
+        "category": "Templates & Tools",
+        "funnel_stage": "MOFU",
+        "target_keyword": "merit matrix template",
+        "primary_search_volume_us": 110,
+        "keyword_difficulty": 18,
+        "secondary_keywords": [
+          "merit matrix",
+          "merit increase matrix template",
+          "performance and pay matrix",
+          "increment matrix",
+          "salary increase grid"
+        ],
+        "word_count_target": 1800,
+        "reading_time_minutes": 9,
+        "suggested_publish_date": "2026-06-30",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "People Operations",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "Merit Matrix Template: How to Build One (Free Download + Examples)",
+          "intro": "A merit matrix is the grid that maps an employee's performance and/or potential to a specific salary increment range. Get the matrix design right and your merit cycle becomes structured, defensible, and budget-predictable. Get it wrong — or skip it entirely — and you're back to manager gut-feel with a spreadsheet veneer. This guide shows you three practical merit matrix structures and how to configure them for a 50–500 employee company.",
+          "sections": [
+            {
+              "h2": "What Is a Merit Matrix?",
+              "body": "A merit matrix (also called a salary increase matrix or merit increase matrix) is a two-dimensional grid that determines the appropriate salary increment percentage for an employee based on their position on two axes — most commonly Performance and Market Position (compa-ratio) or Performance and Potential.\n\nThe output of the matrix is a specific increment range (e.g., 5–8%) for each cell, which managers and HR use to guide increment decisions. A well-designed merit matrix ensures that:\n- High performers receive meaningfully larger increases\n- Below-market employees receive higher increases to close the gap\n- Total increment spend stays within budget constraints"
+            },
+            {
+              "h2": "The 3 Most Common Merit Matrix Structures",
+              "body": ""
+            },
+            {
+              "h3": "Structure 1: The Classic 9-Box (Performance × Potential)",
+              "body": "The 9-box is widely used in enterprise companies but is often overcomplicated for 50–500 employee organizations. It maps Performance (Low/Medium/High) against Potential (Low/Medium/High):\n\n| | **High Potential** | **Med Potential** | **Low Potential** |\n|---|---|---|---|\n| **High Performance** | 8–12% | 6–9% | 4–6% |\n| **Med Performance** | 5–8% | 3–5% | 2–3% |\n| **Low Performance** | 2–4% | 0–2% | 0% |\n\n**When to use:** Companies with structured talent management programs and calibrated potential assessments.\n**When to avoid:** If 'potential' ratings are subjective and uncalibrated, the 9-box adds noise rather than signal."
+            },
+            {
+              "h3": "Structure 2: The 4-Box (Performance × Compa-Ratio)",
+              "body": "The 4-box maps Performance (Below/Above threshold) against Market Position (Below/At-or-Above market):\n\n| | **Below Market Rate** | **At or Above Market** |\n|---|---|---|\n| **Above Threshold Performance** | 7–12% | 5–8% |\n| **Below Threshold Performance** | 2–4% | 0–2% |\n\n**When to use:** Companies with defined salary bands and access to market benchmarking data.\n**Best for:** 150–500 employee companies with established pay ranges."
+            },
+            {
+              "h3": "Structure 3: The Weighted Score Matrix (MeritCyc Approach)",
+              "body": "Rather than a 2D grid, a weighted score matrix calculates a composite score from multiple weighted criteria and maps the score directly to a tier and increment range:\n\n| Score Range | Tier | Increment Range |\n|---|---|---|\n| 85–100 | Tier 1 — Exceptional | 8–12% |\n| 70–84 | Tier 2 — Exceeds | 5–8% |\n| 55–69 | Tier 3 — Meets | 2–4% |\n| 40–54 | Tier 4 — Developing | 0–2% |\n| <40 | Below Threshold | 0% |\n\nCriteria example:\n- Performance Rating: 40% weight\n- Goal Achievement: 30% weight\n- Skills Growth: 20% weight\n- Tenure Factor: 10% weight\n\n**When to use:** Companies that want a single defensible score per employee rather than a two-axis subjective placement.\n**Best for:** 50–300 employee companies running their first structured merit cycle."
+            },
+            {
+              "h2": "How to Set Increment Ranges in Your Matrix",
+              "body": "Increment ranges in the matrix must be consistent with your total merit budget. Here's how to calibrate:\n\n1. **Start with your budget pool** (e.g., 3.5% of total base payroll)\n2. **Estimate expected tier distribution** (e.g., 15% Tier 1, 30% Tier 2, 45% Tier 3, 10% none)\n3. **Calculate weighted cost** at midpoint of each range and check it matches your budget\n4. **Adjust tier ranges** up or down until the weighted average aligns with your budget\n\nThis is exactly what MeritCyc's Budget Simulation does automatically — you enter criteria and thresholds, and it calculates expected tier distribution and total cost against your real employee population."
+            },
+            {
+              "h2": "Free Merit Matrix Template Download",
+              "body": "We've prepared three downloadable merit matrix templates in Excel format:\n\n- **Template A:** Weighted Score Matrix (5 criteria, 4 tiers) — recommended for most mid-size companies\n- **Template B:** 9-Box Matrix with increment ranges\n- **Template C:** 4-Box Performance × Compa-Ratio matrix\n\nEach template includes:\n- Pre-filled example criteria and weights\n- Budget simulation tab (enter your headcount and payroll data)\n- Tier distribution calculator\n- Instructions for customization"
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Download the Free Merit Matrix Template Pack",
+            "url": "https://meritcyc.com/resources/merit-matrix-templates",
+            "placement": "after_download_section"
+          },
+          "secondary": {
+            "text": "Run a Live Budget Simulation in MeritCyc",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "how to run a merit cycle",
+            "url": "/blog/how-to-run-a-merit-cycle"
+          },
+          {
+            "anchor": "average merit increase 2026",
+            "url": "/blog/average-merit-increase-2026"
+          },
+          {
+            "anchor": "budget simulation",
+            "url": "/features/budget-simulation"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 7,
+      "meta": {
+        "title": "Pave Alternatives in 2026: 6 Compensation Tools Worth Considering",
+        "slug": "pave-alternatives",
+        "canonical_url": "https://meritcyc.com/blog/pave-alternatives",
+        "meta_description": "Looking for Pave alternatives? We compare 6 compensation management tools including MeritCyc, Aeqium, Comprehensive, OpenComp, HRSoft, and beqom — with honest verdicts for mid-size HR teams.",
+        "meta_keywords": [
+          "Pave alternatives",
+          "alternatives to Pave compensation",
+          "Pave competitors",
+          "compensation software alternatives 2026"
+        ],
+        "og_title": "6 Best Pave Alternatives in 2026 — Honest Comparison",
+        "og_description": "MeritCyc, Aeqium, Comprehensive, OpenComp, HRSoft, beqom. Which Pave alternative is right for a 50–500 employee company? Feature and pricing comparison.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/pave-alternatives.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Best Pave Alternatives 2026 — Compared for Mid-Market HR Teams",
+        "twitter_description": "If Pave doesn't fit, here are 6 compensation tools worth evaluating. Honest feature comparison, pricing context, and mid-market verdicts.",
+        "schema_type": "Article",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Pave Alternatives in 2026: 6 Compensation Tools Worth Considering",
+          "description": "An honest comparison of Pave alternatives for HR teams at mid-size companies, covering features, pricing, and key differentiators.",
+          "author": { "@type": "Organization", "name": "MeritCyc" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MeritCyc",
+            "url": "https://meritcyc.com"
+          }
+        }
+      },
+      "content": {
+        "category": "Comparisons",
+        "funnel_stage": "BOFU",
+        "target_keyword": "Pave alternatives",
+        "primary_search_volume_us": 90,
+        "keyword_difficulty": 26,
+        "secondary_keywords": [
+          "Pave compensation alternatives",
+          "alternatives to Pave",
+          "Pave vs MeritCyc",
+          "Pave vs Aeqium",
+          "best Pave alternative"
+        ],
+        "word_count_target": 2200,
+        "reading_time_minutes": 11,
+        "suggested_publish_date": "2026-07-07",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "People Operations",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "Pave Alternatives in 2026: 6 Compensation Tools Worth Considering",
+          "intro": "Pave is a well-built compensation benchmarking platform with a strong network of companies sharing payroll data. But benchmarking is only one part of the compensation problem. If you're looking for a Pave alternative because you need stronger merit cycle management, budget simulation before publishing criteria, enforced criteria integrity, or pay transparency compliance features — you're in the right place.",
+          "sections": [
+            {
+              "h2": "Why HR Teams Look for Pave Alternatives",
+              "body": "Pave's core strength is its benchmarking data network — companies share payroll data, and in exchange receive market compensation intelligence. This is valuable for setting pay ranges and offer letters.\n\nThe reasons HR teams look for alternatives to Pave typically fall into four categories:\n\n1. **Merit cycle workflow is shallow.** Pave has basic comp planning features, but no pre-publish budget simulation and no criteria lock. If your increment process needs to be defensible and compliant, Pave's workflow doesn't go deep enough.\n2. **No employee transparency portal.** Pave is a tool for HR and compensation teams — not employees. If you want employees to see their criteria, scores, and increment explanations, Pave doesn't offer this.\n3. **Pricing is quoted, not published.** For a 200-employee company without a dedicated procurement team, getting a Pave quote can feel like buying a car.\n4. **Not built for EU/UK compliance.** Pave has limited content or features for EU Pay Transparency Directive or UK gender pay gap reporting requirements."
+            },
+            {
+              "h2": "The 6 Best Pave Alternatives",
+              "body": ""
+            },
+            {
+              "h3": "1. MeritCyc — Best for Merit Cycle Process + Budget Control",
+              "body": "**What it does differently from Pave:** MeritCyc flips the prioritization. Where Pave's primary value is benchmarking data, MeritCyc's primary value is the increment workflow — specifically the Budget Simulation Engine (model outcomes before publishing criteria) and Criteria Lock (enforce immutability after publishing).\n\n**Key advantages over Pave:**\n- Pre-publish budget simulation with what-if scenario modeling\n- Criteria lock enforced at system level (not just policy)\n- Employee Increment Stories — personalized explanations for every decision\n- Career progression map for employees\n- Automated fairness audit with EU pay transparency compatibility\n- Published, transparent pricing ($3–$12/PEPM)\n\n**Where Pave is stronger:** Real-time market benchmarking data from live network. MeritCyc does not yet offer real-time external benchmarks (planned Phase 4).\n\n**Best for:** Mid-size companies (50–500 employees) prioritizing process fairness, budget control, and employee transparency over external salary benchmarking."
+            },
+            {
+              "h3": "2. Aeqium — Best for Modern UX + AI Insights",
+              "body": "Aeqium is a strong mid-market alternative with a clean, modern interface and AI-generated compensation insights. It handles merit cycles adequately and has good manager usability. Lacks pre-publish budget simulation and criteria lock, but covers the core comp planning workflow well.\n\n**Best for:** Companies wanting a modern UI and AI-powered compensation insights, where process integrity controls are secondary.\n**Pricing:** Custom quoted."
+            },
+            {
+              "h3": "3. Comprehensive (comprehensive.io) — Best for Pay Bands + Ranges",
+              "body": "Comprehensive focuses on compensation structure — pay ranges, bands, and offer letter generation. Its merit cycle features are functional, and its pay band design tools are among the best in the mid-market. Less strong on simulation and transparency.\n\n**Best for:** Companies whose primary pain is 'we don't have structured pay ranges' more than 'our merit cycle process is broken.'\n**Pricing:** Quoted. Mid-market range."
+            },
+            {
+              "h3": "4. OpenComp — Best for Founder-Stage + Startup Companies",
+              "body": "OpenComp combines benchmarking data with basic comp cycle tools. It has stronger benchmarking than MeritCyc for venture-backed tech companies. Merit cycle features are present but thin on process controls.\n\n**Best for:** Early-stage tech companies (50–300 employees) prioritizing market benchmarking for offer letters and band-setting.\n**Pricing:** Quoted. Typically $10–$20K/year."
+            },
+            {
+              "h3": "5. beqom — Best for Enterprise Pay Transparency Compliance",
+              "body": "beqom is an enterprise compensation platform with strong pay transparency compliance features for EU/US regulations. More powerful than Pave — but also significantly more complex and expensive. Implementation typically takes months.\n\n**Best for:** 500+ employee companies with a dedicated compensation team and EU compliance requirements.\n**Pricing:** Enterprise quoted. $50K–$200K+/year."
+            },
+            {
+              "h3": "6. HRSoft (COMPview) — Best for Long-Term Incentives + Complexity",
+              "body": "HRSoft's COMPview handles complex compensation programs including LTI (Long-Term Incentives), equity, and executive comp alongside base merit. It's enterprise-grade and enterprise-priced.\n\n**Best for:** 1,000+ employee companies with complex multi-element comp programs.\n**Pricing:** Enterprise quoted."
+            },
+            {
+              "h2": "Feature Comparison: Pave vs. Alternatives",
+              "body": "| Feature | Pave | MeritCyc | Aeqium | Comprehensive | OpenComp | beqom |\n|---|---|---|---|---|---|---|\n| Benchmarking Data | Strong | Roadmap | Moderate | Limited | Moderate | Limited |\n| Budget Simulation | No | Yes (full) | No | Partial | No | Partial |\n| Criteria Lock | No | Yes | No | No | No | No |\n| Weighted Scoring | Yes | Yes | Yes | Yes | Yes | Yes |\n| Employee Portal | Minimal | Full | No | No | No | No |\n| Pay Transparency / EU | No | Roadmap | No | No | No | Strong |\n| Transparent Pricing | No | Yes | No | No | No | No |\n| Mid-Market Sweet Spot | 50–500 | 50–500 | 100–1,000 | 50–500 | 50–500 | 500+ |"
+            },
+            {
+              "h2": "Which Pave Alternative Should You Choose?",
+              "body": "- **If your primary gap is the merit cycle process** (simulation, criteria integrity, employee communication): MeritCyc.\n- **If your primary gap is pay range structure** (no defined bands): Comprehensive.\n- **If your primary gap is a modern UI + AI insights**: Aeqium.\n- **If you're a growth-stage tech startup** that needs market benchmarking first: OpenComp.\n- **If you're 500+ employees with EU compliance requirements**: beqom.\n- **If you need LTI, equity, and executive comp**: HRSoft."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Try MeritCyc Free for 14 Days",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Compare MeritCyc vs. Pave Side-by-Side",
+            "url": "https://meritcyc.com/compare/meritcyc-vs-pave",
+            "placement": "after_why_hr_teams_section"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "merit cycle software",
+            "url": "/blog/merit-cycle-software"
+          },
+          {
+            "anchor": "budget simulation",
+            "url": "/features/budget-simulation"
+          },
+          {
+            "anchor": "EU Pay Transparency Directive",
+            "url": "/blog/eu-pay-transparency-directive-2026"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 8,
+      "meta": {
+        "title": "How to Migrate from Spreadsheets to Compensation Software (Without Breaking Your Cycle)",
+        "slug": "migrate-spreadsheets-to-compensation-software",
+        "canonical_url": "https://meritcyc.com/blog/migrate-spreadsheets-to-compensation-software",
+        "meta_description": "Step-by-step playbook for HR teams migrating their merit cycle from Excel to compensation software. Data prep, migration timeline, change management, and what to do with historical salary data.",
+        "meta_keywords": [
+          "spreadsheet to compensation software",
+          "migrate compensation software",
+          "replace excel hr tool",
+          "excel merit cycle migration",
+          "compensation software migration"
+        ],
+        "og_title": "How to Migrate from Spreadsheets to Compensation Software",
+        "og_description": "The step-by-step HR migration playbook. Data prep, change management, and how to run your first digital merit cycle without disrupting the business.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/migrate-spreadsheets-compensation-software.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "How to Migrate Your Merit Cycle from Excel to Compensation Software",
+        "twitter_description": "Data prep, change management, migration timeline, and what to do with 3 years of historical salary data. The practical HR playbook.",
+        "schema_type": "HowTo",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to Migrate from Spreadsheets to Compensation Software",
+          "description": "A step-by-step guide for HR teams moving their salary increment process from Excel to dedicated compensation software.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Audit your current spreadsheet",
+              "text": "Document all data fields, formulas, and access permissions in your current merit spreadsheet."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Clean and export employee data",
+              "text": "Prepare a clean CSV of employee records including name, department, salary band, current salary, and manager."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Configure the new platform",
+              "text": "Set up departments, salary bands, roles, and criteria before importing employee data."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Run a parallel cycle",
+              "text": "Run your first digital cycle alongside (not instead of) a frozen copy of your spreadsheet for validation."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Train managers and go live",
+              "text": "Brief all managers on the new scoring interface before the evaluation window opens."
+            }
+          ]
+        }
+      },
+      "content": {
+        "category": "Implementation Guides",
+        "funnel_stage": "MOFU / BOFU",
+        "target_keyword": "spreadsheet to compensation software migration",
+        "primary_search_volume_us": 30,
+        "keyword_difficulty": 8,
+        "secondary_keywords": [
+          "replace excel merit cycle",
+          "compensation software migration guide",
+          "move from spreadsheet to HR software",
+          "merit cycle digital migration",
+          "HR software implementation"
+        ],
+        "word_count_target": 2000,
+        "reading_time_minutes": 10,
+        "suggested_publish_date": "2026-07-14",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "Customer Success",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "How to Migrate from Spreadsheets to Compensation Software (Without Breaking Your Cycle)",
+          "intro": "For most mid-size companies, the merit cycle lives in a Google Sheet or Excel workbook that has been passed from one HR Director to the next for years. It works — barely — until the moment it doesn't: a formula breaks during scoring, someone edits a cell they shouldn't, or an employee discovers that their peer in the same tier got a different increment because of a copy-paste error. This guide is the exact migration playbook we give new MeritCyc customers.",
+          "sections": [
+            {
+              "h2": "Before You Begin: What to Document from Your Current Spreadsheet",
+              "body": "Don't migrate until you have documented:\n\n1. **All data fields** used in your current merit process (employee ID, name, department, manager, salary band, current salary, performance score, increment percentage, tier)\n2. **All scoring formulas** — write down the logic, not just the Excel formula\n3. **All criteria and weights** from the last 2–3 cycles\n4. **Access and permission structure** — who can view vs. edit what\n5. **Approval workflow** — how does a merit decision move from manager to HR to finance approval?\n\nThis documentation becomes your configuration specification for the new system."
+            },
+            {
+              "h2": "Step 1: Clean Your Employee Data (Allow 3–5 Days)",
+              "body": "The most common migration failure is importing messy data. Before touching any software, prepare a clean CSV export:\n\n**Required fields:**\n- Employee ID (unique identifier — use your HRIS ID if available)\n- Full name\n- Email address (for system login)\n- Department\n- Manager name and email\n- Job title and salary band\n- Current base salary (and currency)\n- Employment start date\n- Employment type (full-time / part-time)\n- Performance score from last cycle (if available)\n\n**Common data issues to fix before import:**\n- Inconsistent department names (\"Eng\" vs \"Engineering\" vs \"Engineering Team\")\n- Missing salary data for recent hires\n- Duplicate employee records\n- Managers not listed as employees in the same system\n- Mixed salary formats (monthly vs. annual, multiple currencies)"
+            },
+            {
+              "h2": "Step 2: Configure the Platform Before Importing People (Allow 1–2 Days)",
+              "body": "Set up your org structure before importing employees. In MeritCyc, this means:\n\n1. **Company settings** — name, timezone, currency, fiscal year\n2. **Departments** — create all departments exactly as they appear in your clean CSV\n3. **Salary bands** — configure each band with min/max salary range and level ordering\n4. **Admin users** — invite HR admins and set their roles before the employee import\n\nThis sequence matters. If you import employees before departments exist, you'll have orphaned records to fix manually."
+            },
+            {
+              "h2": "Step 3: Import Employees and Validate (Allow 1–2 Days)",
+              "body": "MeritCyc supports bulk CSV import with a validation preview — you see all error rows before confirming the import.\n\n**Validation checklist after import:**\n- [ ] Total employee count matches your clean CSV\n- [ ] Every employee has a department and manager assigned\n- [ ] Every employee has a salary band\n- [ ] Manager hierarchy is correct (no employees without managers)\n- [ ] Salary data is imported correctly (spot-check 10–15 records)\n- [ ] All HR admins can see all employee records\n- [ ] All managers can see only their direct reports"
+            },
+            {
+              "h2": "Step 4: Configure Your First Cycle (Allow 1 Day)",
+              "body": "Once your employee data is clean and validated, configure your first merit cycle:\n\n1. Create the cycle with name, date range, and eligible scope\n2. Build criteria (use your documented weights from Step 1)\n3. Configure tiers (tier names, score thresholds, increment ranges)\n4. Set the budget pool\n5. **Run the budget simulation** — this is the step that was impossible in your spreadsheet. You'll immediately see: how many employees fall into each tier, and the projected total cost. Adjust thresholds if needed before publishing.\n\nDo not publish yet."
+            },
+            {
+              "h2": "Step 5: Run a Shadow Cycle (Recommended for First Migration)",
+              "body": "For your first migration, we strongly recommend a shadow cycle: run the new system in parallel with a frozen copy of your existing spreadsheet. Don't use the new system's outputs for actual payroll decisions yet.\n\nA shadow cycle lets you:\n- Verify that score calculations match your existing logic\n- Identify any edge cases your spreadsheet handled differently\n- Build manager confidence in the new interface before they're accountable to it\n- Confirm that budget simulation results align with manual projections\n\nMost companies run a shadow cycle for one merit period (typically 4–6 weeks), then go fully live on the next."
+            },
+            {
+              "h2": "Step 6: Train Managers Before the Evaluation Window Opens",
+              "body": "Manager training does not need to be extensive — 30 minutes is enough for most managers if the interface is well-designed. Cover:\n- How to access the evaluation form\n- What each criterion means (provide a one-page reference sheet)\n- How weighted scores and tier placement work\n- What the deadline is and what happens if they miss it\n\nSend reminder emails at 7 days, 3 days, and 1 day before the evaluation window closes. MeritCyc automates these reminders."
+            },
+            {
+              "h2": "Step 7: Archive Your Historical Spreadsheet Data",
+              "body": "After a successful migration, don't delete your old spreadsheets. Archive them in read-only format with:\n- A clear naming convention (e.g., MeritCycle_2025_H1_ARCHIVE.xlsx)\n- Access restricted to HR admins only\n- A date stamp of when the data was archived\n\nHistorical data may be required for pay equity audits (the EU Pay Transparency Directive requires 3 years of data for joint pay assessments) or employee disputes."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Start Your MeritCyc Migration — Free Data Import Support",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Download the Migration Readiness Checklist",
+            "url": "https://meritcyc.com/resources/migration-checklist",
+            "placement": "after_step_1_section"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "how to run a merit cycle",
+            "url": "/blog/how-to-run-a-merit-cycle"
+          },
+          {
+            "anchor": "salary increment software",
+            "url": "/blog/salary-increment-software-mid-size-companies"
+          },
+          {
+            "anchor": "budget simulation",
+            "url": "/features/budget-simulation"
+          },
+          {
+            "anchor": "EU Pay Transparency Directive data retention",
+            "url": "/blog/eu-pay-transparency-directive-2026"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 9,
+      "meta": {
+        "title": "Compensation Budget Planning: A Practical Guide for HR and Finance Teams",
+        "slug": "compensation-budget-planning",
+        "canonical_url": "https://meritcyc.com/blog/compensation-budget-planning",
+        "meta_description": "How to build a compensation budget plan that finance approves and employees trust. Covers top-down vs. bottom-up approaches, merit budget modeling, and simulation before commitment.",
+        "meta_keywords": [
+          "compensation budget planning",
+          "merit budget planning",
+          "salary budget planning",
+          "compensation budget template",
+          "HR budget planning"
+        ],
+        "og_title": "Compensation Budget Planning: Practical Guide for HR and Finance",
+        "og_description": "Top-down vs bottom-up compensation budget planning. How to model merit budgets, run simulations, and get CFO sign-off before committing to criteria.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/compensation-budget-planning.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Compensation Budget Planning Guide for HR + Finance Teams",
+        "twitter_description": "Top-down vs bottom-up. Budget simulation before criteria publish. CFO approval framework. The practical guide for mid-size companies.",
+        "schema_type": "Article",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Compensation Budget Planning: A Practical Guide for HR and Finance Teams",
+          "description": "A practical guide to building and managing the annual compensation budget, including merit pool allocation, simulation, and CFO approval workflows.",
+          "author": { "@type": "Organization", "name": "MeritCyc" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MeritCyc",
+            "url": "https://meritcyc.com"
+          }
+        }
+      },
+      "content": {
+        "category": "Guides",
+        "funnel_stage": "MOFU",
+        "target_keyword": "compensation budget planning",
+        "primary_search_volume_us": 320,
+        "keyword_difficulty": 28,
+        "secondary_keywords": [
+          "merit budget planning",
+          "salary budget template",
+          "compensation budget forecast",
+          "HR budget planning",
+          "salary increase budget"
+        ],
+        "word_count_target": 2200,
+        "reading_time_minutes": 11,
+        "suggested_publish_date": "2026-07-21",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "Finance & Compensation",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "Compensation Budget Planning: A Practical Guide for HR and Finance Teams",
+          "intro": "Compensation is typically the largest single line item on the income statement for a service or knowledge-work company — often 60–75% of total operating expense. Yet the process for planning the annual merit budget at most mid-size companies is some version of: finance sets a number, HR distributes it across departments, managers fill in names. There is no simulation of what that number produces in actual outcomes, no modeling of how criteria design affects tier distribution, and no connection between budget allocation and employee experience. This guide changes that.",
+          "sections": [
+            {
+              "h2": "What Is Compensation Budget Planning?",
+              "body": "Compensation budget planning is the process of determining how much of the total operating budget will be allocated to salary increases (merit pool), variable pay (bonuses, commissions), and benefits cost increases in a given period — and then modeling how that allocation will be distributed across employees.\n\nFor most companies with annual merit cycles, this happens once a year (Q4 or Q1) and covers base salary merit increases. The output is a 'merit budget' — typically expressed as a percentage of total payroll (e.g., 3.5% of total base payroll) or a fixed dollar amount (e.g., $840,000 for a 200-person company at $210,000 average salary)."
+            },
+            {
+              "h2": "Top-Down vs. Bottom-Up Compensation Budgeting",
+              "body": "There are two fundamentally different approaches to setting the merit budget:\n\n**Top-Down:** Finance sets a total budget envelope based on revenue projections, profitability targets, and market benchmarks. HR then distributes this envelope across departments and criteria.\n\n*Advantage:* Budget certainty before the cycle begins. Finance approves before HR commits.\n*Disadvantage:* If the budget is too tight relative to market rates, you'll lose talent even with a 'fair' process.\n\n**Bottom-Up:** HR designs the criteria first, estimates how many employees will land in each tier, calculates the total cost, and presents this to finance for approval.\n\n*Advantage:* Budget is grounded in actual performance distribution.\n*Disadvantage:* Finance often cuts the budget after criteria are designed — forcing retroactive changes that destroy employee trust.\n\n**The hybrid approach (recommended):** Finance sets a budget envelope (top-down). HR designs criteria and then runs a simulation to verify the envelope is achievable. If simulation shows the criteria will cost more than the envelope, HR adjusts thresholds before publishing — not after. This is exactly what MeritCyc's Budget Simulation Engine enables."
+            },
+            {
+              "h2": "The 5-Step Compensation Budget Planning Process",
+              "body": ""
+            },
+            {
+              "h3": "Step 1: Establish Your Total Compensation Budget Envelope",
+              "body": "Work with finance to agree on a total merit budget expressed as % of base payroll. Reference points:\n- Industry benchmark (Mercer, WTW, Aon surveys — see our 2026 benchmarks post)\n- Company financial health (revenue growth rate, EBITDA margin vs. target)\n- Retention risk (high attrition departments may need above-average budgets)\n- Market positioning (are you targeting P50 or P75 on compensation?)\n\nDocumented output: total merit pool in dollars and % of payroll, approved by CFO."
+            },
+            {
+              "h3": "Step 2: Segment the Budget by Department and Band",
+              "body": "Not all departments face the same retention risk or market pressure. Allocate the budget unevenly if needed:\n- Engineering teams competing for talent may need 4.5–5.0%\n- Administrative teams with lower attrition risk may be appropriate at 2.5–3.0%\n\nThis segmentation must happen before criteria design, so criteria can be calibrated to each department's budget."
+            },
+            {
+              "h3": "Step 3: Design Increment Criteria and Tiers",
+              "body": "Design criteria (weights, measurement types) and tier structure (score thresholds, increment ranges) for each department or globally. Keep criteria simple in year one: 3–5 criteria, 3–4 tiers."
+            },
+            {
+              "h3": "Step 4: Run a Budget Simulation (Before Any Criteria Are Published)",
+              "body": "This is the most important step and the one most companies skip. Before publishing criteria to employees or managers, simulate the financial outcome:\n\n- Input: criteria weights, tier thresholds, increment ranges, employee population\n- Output: projected number of employees per tier, projected total spend, projected spend by department\n\nIf projected spend > approved budget, adjust criteria thresholds (not the budget). Repeat simulation until aligned.\n\nIf projected spend < approved budget, you have room to increase tier increments or lower thresholds — improving talent outcomes without exceeding budget.\n\nMeritCyc's Budget Simulation does this in real time with slider controls — no manual modeling required."
+            },
+            {
+              "h3": "Step 5: Lock Criteria and Submit Final Budget to Finance",
+              "body": "Once the simulation shows alignment between criteria design and budget, lock the criteria and submit the final projected spend to finance as the approved commitment. Finance now knows:\n- The total merit spend (within a 5% variance range)\n- The tier distribution that drives it\n- The criteria that were used (documented, defensible)\n\nThis replaces the typical Q1 panic — 'We ran the cycle and the total is 20% over budget, what do we do?' — with a clean, pre-approved commitment."
+            },
+            {
+              "h2": "Compensation Budget Planning Template",
+              "body": "Your compensation budget plan document should include:\n\n| Component | Detail |\n|---|---|\n| Total merit pool | $XXX or X.X% of payroll |\n| Budget approval date | Date signed off by CFO |\n| Eligible employee count | Total, with breakdown by department |\n| Total payroll baseline | Sum of current base salaries |\n| Tier structure | Tier names, score ranges, increment ranges |\n| Projected tier distribution | # employees per tier (from simulation) |\n| Projected total spend | $ amount per tier and overall |\n| Budget variance range | ±X% acceptable range |\n| Finalization date | When actual spend is confirmed |"
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Run Your Compensation Budget Simulation in MeritCyc",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Download the Compensation Budget Planning Template",
+            "url": "https://meritcyc.com/resources/comp-budget-template",
+            "placement": "after_template_section"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "average merit increase 2026",
+            "url": "/blog/average-merit-increase-2026"
+          },
+          {
+            "anchor": "budget simulation engine",
+            "url": "/features/budget-simulation"
+          },
+          {
+            "anchor": "how to run a merit cycle",
+            "url": "/blog/how-to-run-a-merit-cycle"
+          },
+          {
+            "anchor": "merit matrix template",
+            "url": "/blog/merit-matrix-template"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 10,
+      "meta": {
+        "title": "What Is a Merit Increase? Definition, Calculation, and 2026 Best Practices",
+        "slug": "what-is-a-merit-increase",
+        "canonical_url": "https://meritcyc.com/blog/what-is-a-merit-increase",
+        "meta_description": "A clear definition of merit increase, how it differs from cost-of-living and across-the-board raises, how to calculate it, and 2026 best practices for fair and budget-safe merit programs.",
+        "meta_keywords": [
+          "what is a merit increase",
+          "merit increase definition",
+          "merit increase vs cost of living",
+          "how does merit increase work",
+          "merit pay definition"
+        ],
+        "og_title": "What Is a Merit Increase? Definition + 2026 HR Best Practices",
+        "og_description": "Merit increase defined. How it differs from COLA and across-the-board raises, how to calculate it, and the best practices that make merit programs fair and defensible in 2026.",
+        "og_type": "article",
+        "og_image": "https://meritcyc.com/og/what-is-a-merit-increase.png",
+        "twitter_card": "summary_large_image",
+        "twitter_title": "What Is a Merit Increase? Definition + 2026 Best Practices",
+        "twitter_description": "Merit increase vs COLA vs across-the-board. Calculation formula, industry data, and what makes a merit program fair in 2026.",
+        "schema_type": "FAQPage",
+        "schema_markup": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is a merit increase?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A merit increase is a salary raise awarded based on an employee's individual performance, achievement, and contribution — as measured against pre-defined criteria. Unlike cost-of-living adjustments, merit increases are differentiated: higher performers receive larger increases."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is a merit increase calculated?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Merit increases are typically calculated as a percentage of the employee's current base salary, applied based on their tier placement in the merit cycle. For example, a Tier 1 employee might receive an 8–10% increase, while a Tier 3 employee receives 2–4%."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the average merit increase in 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The average merit increase budget in 2026 is approximately 3.4–3.6% of base payroll, based on surveys from Mercer, WTW, and Aon. This represents a slight decline from the 3.7–3.9% budgets seen during the 2022–2023 inflation peak."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between a merit increase and a cost-of-living adjustment?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A cost-of-living adjustment (COLA) is a uniform increase applied to all employees to offset inflation. A merit increase is performance-based and differentiated — different employees receive different percentages based on individual performance criteria."
+              }
+            }
+          ]
+        }
+      },
+      "content": {
+        "category": "HR Glossary",
+        "funnel_stage": "TOFU",
+        "target_keyword": "what is a merit increase",
+        "primary_search_volume_us": 1900,
+        "keyword_difficulty": 28,
+        "secondary_keywords": [
+          "merit increase definition",
+          "how does merit increase work",
+          "merit pay",
+          "merit increase vs cost of living",
+          "merit raise definition"
+        ],
+        "word_count_target": 1800,
+        "reading_time_minutes": 9,
+        "suggested_publish_date": "2026-08-04",
+        "author": {
+          "name": "MeritCyc Team",
+          "role": "People Operations",
+          "company": "Lumora Ventures PVT LTD"
+        },
+        "heading_structure": {
+          "h1": "What Is a Merit Increase? Definition, Calculation, and 2026 Best Practices",
+          "intro": "A merit increase is a salary raise given to an employee based on their individual performance and contribution — as measured against defined criteria. The key distinction from other types of raises is that merit increases are earned and differentiated: higher performers receive larger increases, and employees below a performance threshold may receive no increase at all.",
+          "sections": [
+            {
+              "h2": "Merit Increase: The Definition",
+              "body": "A merit increase (also called a merit raise or merit pay increase) is a salary adjustment awarded to an individual employee in recognition of their performance during a defined review period. It is:\n\n- **Performance-based:** Tied to how the employee performed against set criteria\n- **Differentiated:** Different employees receive different percentages\n- **Periodic:** Typically awarded annually through a structured merit cycle\n- **Permanent:** Once granted, the increase becomes part of the employee's base salary (unlike a bonus, which is a one-time payment)\n\nMerit increases are the primary mechanism through which companies reward individual contribution while managing total compensation cost — which is why the merit cycle design process matters so much."
+            },
+            {
+              "h2": "Merit Increase vs. Cost-of-Living Adjustment (COLA)",
+              "body": "| Factor | Merit Increase | Cost-of-Living Adjustment (COLA) |\n|---|---|---|\n| **Basis** | Individual performance | Inflation / purchasing power |\n| **Differentiation** | Yes — varies by performance | No — same % for all employees |\n| **Purpose** | Reward contribution | Maintain real wages |\n| **Tied to budget** | Yes (merit pool) | Sometimes (indexed to CPI) |\n| **Motivational effect** | High (performance incentive) | Low (entitlement expectation) |\n\nMany companies give both in high-inflation years: a flat COLA for all employees plus a performance-differentiated merit increase on top."
+            },
+            {
+              "h2": "Merit Increase vs. Promotion Increase vs. Market Adjustment",
+              "body": "Three types of salary increases are frequently confused:\n\n- **Merit increase:** Performance-based, periodic, part of the annual merit cycle\n- **Promotion increase:** Role change — employee takes on a higher-level position with a new salary band. Typically 8–15% on top of merit.\n- **Market adjustment:** Correction when an employee is significantly below market rate, regardless of performance. Not awarded in the merit cycle — awarded off-cycle to correct pay equity issues."
+            },
+            {
+              "h2": "How Is a Merit Increase Calculated?",
+              "body": "The calculation has three components:\n\n1. **Performance score:** Weighted composite of all criteria (e.g., performance rating 40%, goal achievement 30%, skill development 20%, tenure 10%)\n2. **Tier placement:** Score maps to a tier (Tier 1: 85–100, Tier 2: 70–84, Tier 3: 55–69)\n3. **Increment range application:** Each tier has a salary increase range (Tier 1: 8–12%, Tier 2: 4–7%, Tier 3: 2–4%)\n\n**Example:**\n- Employee current salary: $65,000\n- Performance score: 78/100 → Tier 2\n- Tier 2 range: 4–7% → Manager assigns 5.5%\n- Merit increase: $65,000 × 5.5% = $3,575\n- New base salary: $68,575"
+            },
+            {
+              "h2": "What Makes a Merit Increase Program Fair?",
+              "body": "In 2026, pay transparency regulations — particularly the EU Pay Transparency Directive — are forcing companies to document and defend every compensation decision. A merit increase program is legally and ethically defensible when:\n\n1. **Criteria are defined and published before the review period.** Not after scores are in.\n2. **Criteria are objective and gender-neutral.** No subjective 'culture fit' or 'executive presence' criteria that function as proxies for bias.\n3. **Criteria are locked once published.** No mid-cycle edits that could benefit certain employees retroactively.\n4. **The same criteria apply consistently.** Not different rubrics for different departments or managers.\n5. **Decisions are documented and explainable.** Every employee should be able to receive a written explanation of why they received the increment they did.\n\nThese requirements are no longer best practices — they're becoming legal obligations."
+            },
+            {
+              "h2": "2026 Merit Increase Best Practices",
+              "body": "1. **Simulate before you publish.** Before employees or managers see criteria, model the financial outcome. (See: How to Run a Merit Cycle)\n2. **Lock criteria at publish.** Build or use a system that enforces immutability.\n3. **Use a weighted score, not a single-dimension rating.** Single performance ratings are more susceptible to bias than multi-criteria weighted scores.\n4. **Deliver an increment story to every employee.** Not just the number — the reasoning, the score breakdown, and the path to a higher tier next cycle.\n5. **Run a pay equity check before finalizing.** Flag gender or department disparities before they become legal exposure.\n6. **Benchmark annually.** A merit program that keeps your top performers at 20% below market is neither fair nor effective at its core purpose: retention."
+            }
+          ]
+        },
+        "cta": {
+          "primary": {
+            "text": "Run a Fair, Defensible Merit Cycle with MeritCyc",
+            "url": "https://app.meritcyc.com/signup",
+            "placement": "end_of_post"
+          },
+          "secondary": {
+            "text": "Read: How to Run a Merit Cycle (Step-by-Step Guide)",
+            "url": "https://meritcyc.com/blog/how-to-run-a-merit-cycle",
+            "placement": "after_definition_section"
+          }
+        },
+        "internal_links": [
+          {
+            "anchor": "average merit increase 2026",
+            "url": "/blog/average-merit-increase-2026"
+          },
+          {
+            "anchor": "how to run a merit cycle",
+            "url": "/blog/how-to-run-a-merit-cycle"
+          },
+          {
+            "anchor": "EU Pay Transparency Directive",
+            "url": "/blog/eu-pay-transparency-directive-2026"
+          },
+          {
+            "anchor": "merit cycle software",
+            "url": "/blog/merit-cycle-software"
+          }
+        ]
+      }
+    }
+  ],
+
+  "publishing_schedule": {
+    "recommended_cadence": "One post per week",
+    "schedule": [
+      {
+        "post_id": 1,
+        "title": "How to Run a Merit Cycle",
+        "publish_date": "2026-06-02",
+        "priority": "Highest"
+      },
+      {
+        "post_id": 2,
+        "title": "Best Merit Cycle Software 2026",
+        "publish_date": "2026-06-09",
+        "priority": "Highest"
+      },
+      {
+        "post_id": 3,
+        "title": "Salary Increment Software for Mid-Size Companies",
+        "publish_date": "2026-06-16",
+        "priority": "Highest"
+      },
+      {
+        "post_id": 4,
+        "title": "EU Pay Transparency Directive 2026",
+        "publish_date": "2026-06-23",
+        "priority": "High"
+      },
+      {
+        "post_id": 5,
+        "title": "Average Merit Increase 2026",
+        "publish_date": "2026-07-01",
+        "priority": "High"
+      },
+      {
+        "post_id": 6,
+        "title": "Merit Matrix Template",
+        "publish_date": "2026-07-08",
+        "priority": "High"
+      },
+      {
+        "post_id": 7,
+        "title": "Pave Alternatives",
+        "publish_date": "2026-07-14",
+        "priority": "High"
+      },
+      {
+        "post_id": 8,
+        "title": "Migrate from Spreadsheets to Compensation Software",
+        "publish_date": "2026-07-21",
+        "priority": "Medium"
+      },
+      {
+        "post_id": 9,
+        "title": "Compensation Budget Planning",
+        "publish_date": "2026-07-28",
+        "priority": "Medium"
+      },
+      {
+        "post_id": 10,
+        "title": "What Is a Merit Increase",
+        "publish_date": "2026-08-04",
+        "priority": "Medium"
+      }
+    ]
+  },
+
+  "free_tools_to_build": [
+    {
+      "tool_name": "Merit Budget Calculator",
+      "url": "/tools/merit-budget-calculator",
+      "feeds_posts": [1, 2, 5, 9],
+      "purpose": "Enter headcount, avg salary, and tier thresholds → see projected merit spend. Primary lead magnet."
+    },
+    {
+      "tool_name": "Compa-Ratio Calculator",
+      "url": "/tools/compa-ratio-calculator",
+      "feeds_posts": [3, 6, 9],
+      "purpose": "Enter salary and midpoint → get compa-ratio and pay positioning context."
+    },
+    {
+      "tool_name": "Merit Matrix Template Download",
+      "url": "/resources/merit-matrix-templates",
+      "feeds_posts": [6, 1],
+      "purpose": "3 Excel templates gated by email — primary list growth tool."
+    },
+    {
+      "tool_name": "EU Pay Transparency Readiness Checker",
+      "url": "/tools/eu-directive-readiness",
+      "feeds_posts": [4],
+      "purpose": "10-question assessment → score + custom recommendations. High-intent EU/UK buyer lead magnet."
+    }
+  ]
+}
