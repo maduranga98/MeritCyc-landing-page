@@ -11,6 +11,7 @@ const TIERS = [
     desc: 'For teams just getting started with structured increments.',
     features: ['Up to 2 cycles/year', 'Basic criteria (5 max)', '3 simulation scenarios', 'Basic employee portal'],
     cta: 'Get Started',
+    ctaHref: 'https://app.meritcyc.com/signup',
     ctaFilled: false,
   },
   {
@@ -29,6 +30,7 @@ const TIERS = [
       'Fairness audit',
     ],
     cta: 'Start Free Trial',
+    ctaHref: 'https://app.meritcyc.com/signup',
     ctaFilled: true,
   },
   {
@@ -45,6 +47,7 @@ const TIERS = [
       'Dedicated CSM + SLA',
     ],
     cta: 'Contact Sales',
+    ctaHref: 'mailto:hello@meritcyc.com',
     ctaFilled: false,
   },
 ];
@@ -199,14 +202,18 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <button
+                <a
+                  href={tier.ctaHref}
                   style={{
+                    display: 'block',
                     width: '100%',
                     padding: '12px 0',
                     borderRadius: 9,
                     fontFamily: 'var(--font-main)',
                     fontSize: 15,
                     fontWeight: 600,
+                    textAlign: 'center',
+                    textDecoration: 'none',
                     cursor: 'pointer',
                     transition: 'all 0.2s',
                     background: tier.ctaFilled ? ACCENT : 'transparent',
@@ -223,7 +230,7 @@ export default function Pricing() {
                   }}
                 >
                   {tier.cta}
-                </button>
+                </a>
 
                 {/* Friction reducer on Growth tier */}
                 {tier.id === 'growth' && (
