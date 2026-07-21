@@ -98,7 +98,8 @@ export default function Navbar() {
 
         {/* CTAs + Hamburger */}
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-          <button
+          <a
+            href="https://app.meritcyc.com/login"
             className="nav-cta-desktop"
             style={{
               padding: "9px 20px",
@@ -110,7 +111,10 @@ export default function Navbar() {
               fontWeight: 500,
               color: "var(--navy)",
               cursor: "pointer",
+              textDecoration: "none",
               transition: "border-color 0.2s",
+              display: "inline-flex",
+              alignItems: "center",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.borderColor = ACCENT)}
             onMouseLeave={(e) =>
@@ -118,8 +122,9 @@ export default function Navbar() {
             }
           >
             Log In
-          </button>
-          <button
+          </a>
+          <a
+            href="https://app.meritcyc.com/signup"
             className="nav-cta-desktop"
             style={{
               padding: "9px 20px",
@@ -131,13 +136,16 @@ export default function Navbar() {
               fontWeight: 600,
               color: "white",
               cursor: "pointer",
+              textDecoration: "none",
               transition: "opacity 0.2s",
+              display: "inline-flex",
+              alignItems: "center",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
           >
             Get Started
-          </button>
+          </a>
           <button
             className="hamburger"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -206,7 +214,8 @@ export default function Navbar() {
             </a>
           ))}
           <div style={{ display: "flex", gap: 12, marginTop: 16 }}>
-            <button
+            <a
+              href="https://app.meritcyc.com/login"
               style={{
                 flex: 1,
                 padding: "10px 0",
@@ -218,11 +227,14 @@ export default function Navbar() {
                 fontWeight: 500,
                 color: "var(--navy)",
                 cursor: "pointer",
+                textDecoration: "none",
+                textAlign: "center",
               }}
             >
               Log In
-            </button>
-            <button
+            </a>
+            <a
+              href="https://app.meritcyc.com/signup"
               style={{
                 flex: 1,
                 padding: "10px 0",
@@ -234,10 +246,12 @@ export default function Navbar() {
                 fontWeight: 600,
                 color: "white",
                 cursor: "pointer",
+                textDecoration: "none",
+                textAlign: "center",
               }}
             >
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       )}

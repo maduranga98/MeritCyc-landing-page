@@ -5,6 +5,6 @@ export const dynamic = 'force-static';
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: '*', allow: '/', disallow: '' },
-    sitemap: 'https://meritcyc-landing.web.app/sitemap.xml',
+    sitemap: 'https://meritcyc.com/sitemap.xml',
   };
 }
