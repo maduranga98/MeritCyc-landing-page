@@ -3,7 +3,7 @@ import './globals.css';
 import RevealObserver from '@/components/RevealObserver';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://meritcyc-landing.web.app'),
+  metadataBase: new URL('https://meritcyc.com'),
   alternates: { canonical: '/' },
   title: 'MeritCyc — Salary Increment Management Software',
   description:
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     title: 'MeritCyc — Salary Increment Management Software',
     description:
       'Run salary increment cycles with budget simulation and criteria lock. Built for CFOs and HR Directors at 50–500 employee companies. Start your free trial.',
-    url: 'https://meritcyc-landing.web.app',
+    url: 'https://meritcyc.com',
     siteName: 'MeritCyc',
     type: 'website',
     images: [
       {
-        url: 'https://meritcyc-landing.web.app/og-image.png',
+        url: 'https://meritcyc.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'MeritCyc — Salary Increment Intelligence Platform',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: 'MeritCyc — Salary Increment Management Software',
     description:
       'Run salary increment cycles with budget simulation and criteria lock. Built for CFOs and HR Directors at 50–500 employee companies. Start your free trial.',
-    images: ['https://meritcyc-landing.web.app/og-image.png'],
+    images: ['https://meritcyc.com/og-image.png'],
   },
   robots: {
     index: true,
@@ -54,7 +54,7 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   description:
     'Salary Increment Intelligence Platform for mid-size companies. Features budget simulation, criteria lock, and employee career maps.',
-  url: 'https://meritcyc-landing.web.app',
+  url: 'https://meritcyc.com',
   offers: {
     '@type': 'AggregateOffer',
     priceCurrency: 'USD',
@@ -83,8 +83,8 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'MeritCyc',
-  url: 'https://meritcyc-landing.web.app',
-  logo: 'https://meritcyc-landing.web.app/logo.png',
+  url: 'https://meritcyc.com',
+  logo: 'https://meritcyc.com/logo.png',
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'hello@meritcyc.com',

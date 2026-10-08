@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const post = getJsonPost(slug);
   if (!post) return {};
-  const url = `https://meritcyc-landing.web.app/blog/${slug}`;
+  const url = `https://meritcyc.com/blog/${slug}`;
   return {
     title: post.meta.title,
     description: post.meta.meta_description,
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description: post.meta.meta_description,
       type: 'article',
       url,
-      images: ['https://meritcyc-landing.web.app/og-image.png'],
+      images: ['https://meritcyc.com/og-image.png'],
     },
   };
 }
@@ -97,10 +97,10 @@ export default async function BlogPostPage({ params }: Params) {
     publisher: {
       '@type': 'Organization',
       name: 'Lumora Ventures PVT LTD',
-      logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' },
     },
-    image: 'https://meritcyc-landing.web.app/og-image.png',
-    mainEntityOfPage: `https://meritcyc-landing.web.app/blog/${slug}`,
+    image: 'https://meritcyc.com/og-image.png',
+    mainEntityOfPage: `https://meritcyc.com/blog/${slug}`,
   };
 
   return (
