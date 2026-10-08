@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     description:
       'A finance-first guide to salary increment cycles for CFOs and VP Finance. Covers budget simulation, criteria governance, pay equity compliance, and the ROI of structured increment management.',
     type: 'article',
-    url: 'https://meritcyc-landing.web.app/blog/cfo-guide-merit-cycles',
-    images: ['https://meritcyc-landing.web.app/og-image.png'],
+    url: 'https://meritcyc.com/blog/cfo-guide-merit-cycles',
+    images: ['https://meritcyc.com/og-image.png'],
   },
 };
 
@@ -26,9 +26,9 @@ const jsonLd = {
     'A finance-first guide to salary increment cycles for CFOs and VP Finance. Covers budget simulation, criteria governance, pay equity compliance, and the ROI of structured increment management.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' } },
-  image: 'https://meritcyc-landing.web.app/og-image.png',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc-landing.web.app/blog/cfo-guide-merit-cycles' },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' } },
+  image: 'https://meritcyc.com/og-image.png',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc.com/blog/cfo-guide-merit-cycles' },
   dateModified: '2026-05-16',
 };
 

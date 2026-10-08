@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     title: 'How to Run a Merit Cycle in 2026: Step-by-Step Best Practices',
     description: 'A practical guide to running a merit cycle from setup to employee communication.',
     type: 'article',
-    url: 'https://meritcyc-landing.web.app/blog/merit-cycle-best-practices',
-    images: ['https://meritcyc-landing.web.app/og-image.png'],
+    url: 'https://meritcyc.com/blog/merit-cycle-best-practices',
+    images: ['https://meritcyc.com/og-image.png'],
   },
 };
 
@@ -24,9 +24,9 @@ const jsonLd = {
   description: 'A practical guide to running a merit cycle from setup to employee communication.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' } },
-  image: 'https://meritcyc-landing.web.app/og-image.png',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc-landing.web.app/blog/merit-cycle-best-practices' },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' } },
+  image: 'https://meritcyc.com/og-image.png',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc.com/blog/merit-cycle-best-practices' },
   dateModified: '2026-05-16',
 };
 

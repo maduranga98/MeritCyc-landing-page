@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     title: 'Criteria Lock in Compensation Cycles: Why It Matters and How It Works',
     description: 'Criteria lock prevents mid-cycle changes to increment criteria after publication.',
     type: 'article',
-    url: 'https://meritcyc-landing.web.app/blog/criteria-lock-compensation',
-    images: ['https://meritcyc-landing.web.app/og-image.png'],
+    url: 'https://meritcyc.com/blog/criteria-lock-compensation',
+    images: ['https://meritcyc.com/og-image.png'],
   },
 };
 
@@ -24,9 +24,9 @@ const jsonLd = {
   description: 'Criteria lock prevents mid-cycle changes to increment criteria after publication.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc-landing.web.app/logo.png' } },
-  image: 'https://meritcyc-landing.web.app/og-image.png',
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc-landing.web.app/blog/criteria-lock-compensation' },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' } },
+  image: 'https://meritcyc.com/og-image.png',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc.com/blog/criteria-lock-compensation' },
   dateModified: '2026-05-16',
 };
 

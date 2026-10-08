@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     title: 'MeritCyc Blog — Salary Increment & Compensation Cycle Insights',
     description: 'Practical guides for HR Directors and CFOs on running salary increment cycles, merit budgeting, and pay transparency.',
     type: 'website',
-    url: 'https://meritcyc-landing.web.app/blog',
-    images: ['https://meritcyc-landing.web.app/og-image.png'],
+    url: 'https://meritcyc.com/blog',
+    images: ['https://meritcyc.com/og-image.png'],
   },
 };
 
