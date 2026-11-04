@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import blogData from '@/app/blog/data.json';
 
 export interface BlogPost {
@@ -63,13 +65,10 @@ const STATIC_POSTS: PostSummary[] = [
   },
 ];
 
+/* ---------- JSON-backed posts (src/app/blog/data.json) ---------- */
+
 interface JsonBlogPost {
-  meta: {
-    slug: string;
-    title: string;
-    meta_description: string;
-    meta_keywords?: string[];
-  };
+  meta: { slug: string; title: string; meta_description: string; meta_keywords?: string[] };
   content: {
     suggested_publish_date?: string;
     reading_time_minutes?: number;
@@ -91,14 +90,76 @@ const jsonPostSummaries: PostSummary[] = JSON_POSTS_RAW.map((p) => ({
   keywords: p.meta.meta_keywords ?? [],
 }));
 
-export const POSTS: PostSummary[] = [...STATIC_POSTS, ...jsonPostSummaries].sort(
-  (a, b) => (b.date > a.date ? 1 : -1)
-);
+/* ---------- Markdown-backed posts (src/content/blog/*.md) ---------- */
+
+export interface MarkdownPost extends PostSummary {
+  seoTitle: string;
+  order: number;
+  intent: string;
+  body: string;
+  related: { label: string; href: string }[];
+  sources: { label: string; href: string }[];
+}
+
+const CONTENT_DIR = path.join(process.cwd(), 'src/content/blog');
+
+function loadMarkdownPosts(): MarkdownPost[] {
+  if (!fs.existsSync(CONTENT_DIR)) return [];
+  return fs
+    .readdirSync(CONTENT_DIR)
+    .filter((f) => f.endsWith('.md'))
+    .map((file) => {
+      // File format: "---\n{json frontmatter}\n---\n{markdown body}"
+      const raw = fs.readFileSync(path.join(CONTENT_DIR, file), 'utf8');
+      const m = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+      if (!m) throw new Error(`Invalid frontmatter in ${file}`);
+      const fm = JSON.parse(m[1]);
+      const body = m[2].trim();
+      const minutes = Math.max(1, Math.round(body.split(/\s+/).length / 220));
+      return { ...fm, body, readTime: `${minutes} min read` } as MarkdownPost;
+    });
+}
+
+const MARKDOWN_POSTS = loadMarkdownPosts();
+
+const toSummary = ({ slug, title, description, date, readTime, keywords }: PostSummary): PostSummary => ({
+  slug, title, description, date, readTime, keywords,
+});
+
+const mdOrder = new Map(MARKDOWN_POSTS.map((p) => [p.slug, p.order]));
+
+/** Newest first; posts sharing a date keep their editorial publishing order. */
+export const POSTS: PostSummary[] = [
+  ...MARKDOWN_POSTS.map(toSummary),
+  ...STATIC_POSTS,
+  ...jsonPostSummaries,
+].sort((a, b) => {
+  if (a.date !== b.date) return b.date > a.date ? 1 : -1;
+  return (mdOrder.get(a.slug) ?? 999) - (mdOrder.get(b.slug) ?? 999);
+});
+
+export function getPostSummary(slug: string): PostSummary | undefined {
+  return POSTS.find((p) => p.slug === slug);
+}
+
+export function getMarkdownPost(slug: string): MarkdownPost | undefined {
+  return MARKDOWN_POSTS.find((p) => p.slug === slug);
+}
 
 export function getJsonPost(slug: string): JsonBlogPost | undefined {
   return JSON_POSTS_RAW.find((p) => p.meta.slug === slug);
 }
 
-export function getAllJsonSlugs(): string[] {
-  return JSON_POSTS_RAW.map((p) => p.meta.slug);
+/** Slugs rendered by the dynamic [slug] route (JSON + markdown posts). */
+export function getAllDynamicSlugs(): string[] {
+  return [...JSON_POSTS_RAW.map((p) => p.meta.slug), ...MARKDOWN_POSTS.map((p) => p.slug)];
+}
+
+/** Related posts: explicit links first, then fill with the newest others. */
+export function getRelated(slug: string, explicit: { href: string }[] = [], count = 3) {
+  const picked = explicit
+    .map((r) => getPostSummary(r.href.replace('/blog/', '')))
+    .filter((p): p is PostSummary => !!p && p.slug !== slug);
+  const rest = POSTS.filter((p) => p.slug !== slug && !picked.includes(p));
+  return [...picked, ...rest].slice(0, count);
 }
