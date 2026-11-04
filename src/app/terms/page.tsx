@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Terms of Service | MeritCyc',
   description: 'Terms of Service for MeritCyc — Salary Increment Intelligence Platform by Lumora Ventures PVT LTD.',
+  alternates: { canonical: '/terms' },
 };
 
 export default function Terms() {
