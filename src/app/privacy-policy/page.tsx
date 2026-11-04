@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy Policy | MeritCyc',
   description: 'Privacy Policy for MeritCyc — Salary Increment Intelligence Platform by Lumora Ventures PVT LTD.',
+  alternates: { canonical: '/privacy-policy' },
 };
 
 export default function PrivacyPolicy() {
