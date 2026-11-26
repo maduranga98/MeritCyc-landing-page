@@ -3,9 +3,9 @@ import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
-  title: "The CFO's Guide to Salary Increment Cycles: Budget Control, Governance, and ROI",
+  title: "CFO's Guide to Salary Increment Cycles: Budget & ROI",
   description:
-    'A finance-first guide to salary increment cycles for CFOs and VP Finance. Covers budget simulation, criteria governance, pay equity compliance, and the ROI of structured increment management.',
+    "A finance-first guide to salary increment cycles for CFOs: budget simulation, criteria governance, pay equity compliance and the ROI of structure.",
   keywords: ['CFO compensation planning', 'salary increment budget control', 'compensation software for CFO', 'merit cycle budget governance', 'increment cycle finance'],
   alternates: { canonical: '/blog/cfo-guide-merit-cycles' },
   openGraph: {
@@ -26,7 +26,7 @@ const jsonLd = {
     'A finance-first guide to salary increment cycles for CFOs and VP Finance. Covers budget simulation, criteria governance, pay equity compliance, and the ROI of structured increment management.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' } },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/meritcyclogo.png' } },
   image: 'https://meritcyc.com/og-image.png',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc.com/blog/cfo-guide-merit-cycles' },
   dateModified: '2026-05-16',

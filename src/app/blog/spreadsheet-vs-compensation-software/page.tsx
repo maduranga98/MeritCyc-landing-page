@@ -3,9 +3,9 @@ import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
-  title: 'Spreadsheets vs Compensation Software: The Real Cost Comparison for Mid-Size Companies',
+  title: "Spreadsheets vs Compensation Software: Real Cost Compared",
   description:
-    'A practical cost and risk comparison of managing salary increment cycles in spreadsheets versus dedicated compensation management software. Built for 50–500 employee teams.',
+    "A cost and risk comparison of running salary increment cycles in spreadsheets vs dedicated compensation software, for 50–500 employee teams.",
   keywords: ['spreadsheet vs compensation software', 'salary increment software vs spreadsheet', 'compensation software for mid-size companies', 'merit cycle software ROI'],
   alternates: { canonical: '/blog/spreadsheet-vs-compensation-software' },
   openGraph: {
@@ -26,7 +26,7 @@ const jsonLd = {
     'A practical cost and risk comparison of managing salary increment cycles in spreadsheets versus dedicated compensation management software.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' } },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/meritcyclogo.png' } },
   image: 'https://meritcyc.com/og-image.png',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc.com/blog/spreadsheet-vs-compensation-software' },
   dateModified: '2026-05-16',

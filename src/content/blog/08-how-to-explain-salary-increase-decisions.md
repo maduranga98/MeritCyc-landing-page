@@ -4,7 +4,7 @@
   "order": 8,
   "title": "How to Explain Salary Increase Decisions to Employees",
   "seoTitle": "How to Explain Salary Increase Decisions to Employees",
-  "description": "Prepare managers to explain salary increases, smaller raises and no-increase decisions with clear language, consistent facts and practical conversation examples.",
+  "description": "Prepare managers to explain salary increases, smaller raises and no-increase decisions with clear language, consistent facts and real examples.",
   "primaryKeyword": "how to explain salary increase to employees",
   "keywords": [
     "how to explain salary increase to employees",
