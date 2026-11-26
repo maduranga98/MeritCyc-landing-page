@@ -1,9 +1,10 @@
 /**
- * Run the report locally:  npm run report -- [--skip-search] [--fetch-origin http://localhost:3000] [--json]
+ * Run the report locally:  npm run report -- [--skip-search] [--fetch-origin http://localhost:3000] [--json] [--email-html out.html]
  * Search Console needs:   gcloud auth application-default login --scopes=https://www.googleapis.com/auth/webmasters.readonly,https://www.googleapis.com/auth/cloud-platform
  */
+import { writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
-import { formatMessage } from './report.js';
+import { formatEmail, formatText } from './report.js';
 import { runSeoReport } from './run.js';
 
 const { values } = parseArgs({
@@ -13,6 +14,7 @@ const { values } = parseArgs({
     'fetch-origin': { type: 'string' },
     'skip-search': { type: 'boolean', default: false },
     json: { type: 'boolean', default: false },
+    'email-html': { type: 'string' }, // write the email HTML to this path for previewing
   },
 });
 
@@ -22,5 +24,6 @@ const report = await runSeoReport({
   fetchOrigin: values['fetch-origin'],
   skipSearch: values['skip-search'],
 });
-console.log(values.json ? JSON.stringify(report, null, 2) : formatMessage(report, false));
+if (values['email-html']) writeFileSync(values['email-html'], formatEmail(report));
+console.log(values.json ? JSON.stringify(report, null, 2) : formatText(report));
 process.exitCode = report.crawl?.errors ? 1 : 0;

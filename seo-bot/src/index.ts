@@ -1,11 +1,11 @@
-/** Firebase entry point: weekly scheduled SEO report → Firestore + Telegram. */
+/** Firebase entry point: weekly scheduled SEO report → Firestore + email. */
 import { initializeApp } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
 import { defineSecret, defineString } from 'firebase-functions/params';
 import { logger } from 'firebase-functions/v2';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
-import { sendTelegram } from './notify.js';
-import { formatMessage } from './report.js';
+import { parseRecipients, sendGmail } from './notify.js';
+import { formatEmail, formatSubject, formatText } from './report.js';
 import { runSeoReport } from './run.js';
 
 initializeApp();
@@ -16,8 +16,11 @@ db.settings({ ignoreUndefinedProperties: true });
 // use "https://meritcyc.com/" for a URL-prefix property.
 const SITE_URL = defineString('SITE_URL', { default: 'https://meritcyc.com' });
 const GSC_PROPERTY = defineString('GSC_PROPERTY', { default: 'sc-domain:meritcyc.com' });
-const TELEGRAM_BOT_TOKEN = defineSecret('TELEGRAM_BOT_TOKEN');
-const TELEGRAM_CHAT_ID = defineSecret('TELEGRAM_CHAT_ID');
+// Gmail account that sends the report + its App Password (https://myaccount.google.com/apppasswords).
+const GMAIL_USER = defineSecret('GMAIL_USER');
+const GMAIL_APP_PASSWORD = defineSecret('GMAIL_APP_PASSWORD');
+// Optional extra recipients (comma-separated); the report always goes to GMAIL_USER.
+const REPORT_CC = defineString('REPORT_CC', { default: '' });
 
 export const weeklySeoReport = onSchedule(
   {
@@ -26,13 +29,18 @@ export const weeklySeoReport = onSchedule(
     memory: '512MiB',
     timeoutSeconds: 300,
     retryCount: 1,
-    secrets: [TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID],
+    secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
   },
   async () => {
     const report = await runSeoReport({ siteUrl: SITE_URL.value(), property: GSC_PROPERTY.value() });
     const id = report.search?.window.current.end ?? report.generatedAt.slice(0, 10);
     await db.collection('seoReports').doc(id).set(report);
     logger.info('SEO report saved', { id, crawlErrors: report.crawl?.errors, searchError: report.searchError });
-    await sendTelegram(TELEGRAM_BOT_TOKEN.value(), TELEGRAM_CHAT_ID.value(), formatMessage(report));
+    await sendGmail(GMAIL_USER.value(), GMAIL_APP_PASSWORD.value(), {
+      to: [GMAIL_USER.value(), ...parseRecipients(REPORT_CC.value())],
+      subject: formatSubject(report),
+      html: formatEmail(report),
+      text: formatText(report),
+    });
   },
 );

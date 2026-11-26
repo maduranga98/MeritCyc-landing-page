@@ -1,10 +1,15 @@
-/** Telegram delivery. Create a bot with @BotFather; get your chat id from @userinfobot. */
-export async function sendTelegram(token: string, chatId: string, html: string): Promise<void> {
-  const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ chat_id: chatId, text: html, parse_mode: 'HTML', link_preview_options: { is_disabled: true } }),
-    signal: AbortSignal.timeout(15_000),
+/** Email delivery through Gmail SMTP using a Gmail App Password (not the account password). */
+import nodemailer from 'nodemailer';
+
+export interface Email { to: string[]; subject: string; html: string; text: string }
+
+export async function sendGmail(user: string, appPassword: string, email: Email): Promise<void> {
+  const transport = nodemailer.createTransport({
+    service: 'gmail',
+    auth: { user, pass: appPassword.replace(/\s+/g, '') }, // Google shows the app password with spaces
   });
-  if (!res.ok) throw new Error(`Telegram ${res.status}: ${await res.text()}`);
+  await transport.sendMail({ from: `MeritCyc SEO Bot <${user}>`, ...email });
 }
+
+/** "a@x.com, b@y.com" → ["a@x.com", "b@y.com"] */
+export const parseRecipients = (s: string) => s.split(/[,;\s]+/).map((x) => x.trim()).filter(Boolean);
