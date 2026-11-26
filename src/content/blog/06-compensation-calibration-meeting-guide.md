@@ -3,7 +3,7 @@
   "slug": "compensation-calibration-meeting-guide",
   "order": 6,
   "title": "How to Run a Fair Compensation Calibration Meeting",
-  "seoTitle": "Compensation Calibration Meetings: A Fair and Practical Guide",
+  "seoTitle": "Compensation Calibration Meetings: A Fair, Practical Guide",
   "description": "Learn how to prepare for compensation calibration, reduce rating inconsistencies, challenge bias and document salary decisions across managers.",
   "primaryKeyword": "compensation calibration meeting",
   "keywords": [

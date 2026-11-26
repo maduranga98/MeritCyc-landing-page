@@ -4,7 +4,7 @@
   "order": 7,
   "title": "How to Allocate a Limited Merit Increase Budget Fairly",
   "seoTitle": "How to Allocate a Limited Merit Increase Budget Fairly",
-  "description": "Learn how to allocate a fixed merit budget using performance, salary range position, pay equity and clear rules without creating arbitrary or inconsistent raises.",
+  "description": "Learn how to allocate a fixed merit budget using performance, range position, pay equity and clear rules, without arbitrary or inconsistent raises.",
   "primaryKeyword": "how to allocate merit increase budget",
   "keywords": [
     "how to allocate merit increase budget",

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
-  title: 'What Is Salary Increment Management Software? A 2026 Buyer Guide',
+  title: "Salary Increment Management Software: 2026 Buyer Guide",
   description:
     'A complete guide to salary increment management software for HR Directors and CFOs at 50–500 employee companies. Covers features, pricing, and how to choose.',
   keywords: ['salary increment management software', 'increment cycle software', 'merit cycle software', 'compensation planning software'],
@@ -24,7 +24,7 @@ const jsonLd = {
   description: 'A complete guide to salary increment management software for HR Directors and CFOs at 50–500 employee companies.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' } },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/meritcyclogo.png' } },
   image: 'https://meritcyc.com/og-image.png',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc.com/blog/salary-increment-management-software' },
   dateModified: '2026-05-16',

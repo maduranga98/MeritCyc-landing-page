@@ -67,15 +67,28 @@ const STATIC_POSTS: PostSummary[] = [
 
 /* ---------- JSON-backed posts (src/app/blog/data.json) ---------- */
 
+interface JsonSection { h2?: string; h3?: string; body?: string }
+
 interface JsonBlogPost {
   meta: { slug: string; title: string; meta_description: string; meta_keywords?: string[] };
   content: {
     suggested_publish_date?: string;
     reading_time_minutes?: number;
+    heading_structure?: { h1?: string; intro?: string; sections?: JsonSection[] };
+    /** Legacy flat shape, kept as a fallback. */
     h1?: string;
     intro?: string;
-    sections?: Array<{ h2?: string; h3?: string; body?: string }>;
-    cta?: { heading?: string; body?: string; button_text?: string; button_url?: string };
+    sections?: JsonSection[];
+  };
+}
+
+/** Article body of a JSON post: data.json nests it under `heading_structure`. */
+export function jsonPostContent({ content: c }: JsonBlogPost) {
+  const hs = c.heading_structure ?? {};
+  return {
+    h1: hs.h1 ?? c.h1 ?? '',
+    intro: hs.intro ?? c.intro ?? '',
+    sections: hs.sections ?? c.sections ?? [],
   };
 }
 

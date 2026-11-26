@@ -84,7 +84,7 @@ const orgSchema = {
   '@type': 'Organization',
   name: 'MeritCyc',
   url: 'https://meritcyc.com',
-  logo: 'https://meritcyc.com/logo.png',
+  logo: 'https://meritcyc.com/meritcyclogo.png',
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'hello@meritcyc.com',

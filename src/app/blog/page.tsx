@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { POSTS } from '@/lib/posts';
 import s from '@/components/blog.module.css';
 
-const TITLE = 'MeritCyc Blog — Salary Increment & Compensation Cycle Insights';
+const TITLE = 'MeritCyc Blog: Merit Cycle & Compensation Guides';
 const DESC = 'Practical guides for HR Directors and CFOs on running salary increment cycles, merit budgeting, pay equity and pay transparency.';
 
 export const metadata: Metadata = {

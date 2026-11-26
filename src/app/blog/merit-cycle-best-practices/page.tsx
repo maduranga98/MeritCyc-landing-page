@@ -3,9 +3,9 @@ import Link from 'next/link';
 import BlogPostLayout from '@/components/BlogPostLayout';
 
 export const metadata: Metadata = {
-  title: 'How to Run a Merit Cycle in 2026: Step-by-Step Best Practices',
+  title: "Merit Cycle Best Practices for 2026: Step-by-Step Guide",
   description:
-    'A practical guide to running a merit cycle from setup to employee communication. Covers criteria design, budget simulation, criteria lock, and increment stories.',
+    "Merit cycle best practices from setup to employee communication: criteria design, budget simulation, criteria lock and increment stories.",
   keywords: ['merit cycle best practices', 'merit cycle software', 'how to run a merit cycle', 'compensation cycle management'],
   alternates: { canonical: '/blog/merit-cycle-best-practices' },
   openGraph: {
@@ -24,7 +24,7 @@ const jsonLd = {
   description: 'A practical guide to running a merit cycle from setup to employee communication.',
   datePublished: '2026-05-06',
   author: { '@type': 'Organization', name: 'MeritCyc' },
-  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/logo.png' } },
+  publisher: { '@type': 'Organization', name: 'Lumora Ventures PVT LTD', logo: { '@type': 'ImageObject', url: 'https://meritcyc.com/meritcyclogo.png' } },
   image: 'https://meritcyc.com/og-image.png',
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://meritcyc.com/blog/merit-cycle-best-practices' },
   dateModified: '2026-05-16',

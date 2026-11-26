@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import BlogPostLayout from '@/components/BlogPostLayout';
-import { getAllDynamicSlugs, getJsonPost, getMarkdownPost, getRelated } from '@/lib/posts';
+import { getAllDynamicSlugs, getJsonPost, getMarkdownPost, getRelated, jsonPostContent } from '@/lib/posts';
 import { renderMarkdown } from '@/lib/markdown';
 import s from '@/components/blog.module.css';
 
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 const publisher = {
   '@type': 'Organization',
   name: 'Lumora Ventures PVT LTD',
-  logo: { '@type': 'ImageObject', url: `${SITE}/logo.png` },
+  logo: { '@type': 'ImageObject', url: `${SITE}/meritcyclogo.png` },
 };
 
 function breadcrumbs(title: string, slug: string) {
@@ -50,31 +50,6 @@ function breadcrumbs(title: string, slug: string) {
       { '@type': 'ListItem', position: 3, name: title, item: `${SITE}/blog/${slug}` },
     ],
   };
-}
-
-/* ---- JSON-backed posts: simple paragraph / list renderer ---- */
-
-function renderInline(text: string): React.ReactNode {
-  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
-    /^\*\*[^*]+\*\*$/.test(part) ? <strong key={i}>{part.slice(2, -2)}</strong> : <span key={i}>{part}</span>,
-  );
-}
-
-function renderBody(text: string, keyPrefix: string) {
-  return text.split(/\n\n+/).map((block, i) => {
-    const trimmed = block.trim();
-    if (!trimmed) return null;
-    const lines = trimmed.split('\n');
-    if (lines.every((l) => /^\s*[-*]\s+/.test(l) || /^\s*\d+\.\s+/.test(l))) {
-      const Tag = /^\s*\d+\.\s+/.test(lines[0]) ? 'ol' : 'ul';
-      return (
-        <Tag key={`${keyPrefix}-${i}`}>
-          {lines.map((l, j) => <li key={j}>{renderInline(l.replace(/^\s*(?:[-*]|\d+\.)\s+/, ''))}</li>)}
-        </Tag>
-      );
-    }
-    return <p key={`${keyPrefix}-${i}`}>{renderInline(trimmed)}</p>;
-  });
 }
 
 export default async function BlogPostPage({ params }: Params) {
@@ -127,56 +102,52 @@ export default async function BlogPostPage({ params }: Params) {
     );
   }
 
-  /* ---- JSON posts ---- */
+  /* ---- JSON posts (same renderer as markdown posts: tables, FAQ, TOC) ---- */
   const post = getJsonPost(slug);
   if (!post) notFound();
 
-  const title = post.content.h1 || post.meta.title;
+  const { h1, intro, sections } = jsonPostContent(post);
+  const title = h1 || post.meta.title;
   const date = post.content.suggested_publish_date ?? '';
   const readTime = post.content.reading_time_minutes ? `${post.content.reading_time_minutes} min read` : '';
   const related = getRelated(slug).map((p) => ({ title: p.title, href: `/blog/${p.slug}` }));
-  const toc = (post.content.sections ?? []).flatMap((sec, i) =>
-    sec.h2 ? [{ id: `section-${i}`, text: sec.h2 }] : [],
-  );
+  const markdown = sections
+    .map((sec) => [sec.h2 && `## ${sec.h2}`, sec.h3 && `### ${sec.h3}`, sec.body].filter(Boolean).join('\n\n'))
+    .join('\n\n');
+  const { nodes, toc, faq } = renderMarkdown(markdown);
 
   const jsonLd = [
     {
       '@context': 'https://schema.org',
-      '@type': 'Article',
+      '@type': 'BlogPosting',
       headline: title,
       description: post.meta.meta_description,
       datePublished: date,
-      author: { '@type': 'Organization', name: 'MeritCyc' },
+      dateModified: date,
+      keywords: (post.meta.meta_keywords ?? []).join(', '),
+      author: { '@type': 'Organization', name: 'MeritCyc', url: SITE },
       publisher,
       image: `${SITE}/og-image.png`,
-      mainEntityOfPage: `${SITE}/blog/${slug}`,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}/blog/${slug}` },
     },
     breadcrumbs(title, slug),
+    ...(faq.length
+      ? [{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faq.map((f) => ({
+            '@type': 'Question',
+            name: f.question,
+            acceptedAnswer: { '@type': 'Answer', text: f.answer },
+          })),
+        }]
+      : []),
   ];
 
   return (
     <BlogPostLayout title={title} date={date} readTime={readTime} relatedPosts={related} jsonLd={jsonLd} toc={toc}>
-      {post.content.intro && <p style={{ fontSize: 19, color: 'var(--slate-500)', marginBottom: 28 }}>{post.content.intro}</p>}
-
-      {post.content.sections?.map((section, i) => (
-        <section key={i}>
-          {section.h2 && <h2 id={`section-${i}`}>{section.h2}</h2>}
-          {section.h3 && <h3 style={{ fontSize: 19, fontWeight: 600, color: 'var(--navy)', margin: '28px 0 12px' }}>{section.h3}</h3>}
-          {section.body && renderBody(section.body, `s${i}`)}
-        </section>
-      ))}
-
-      {post.content.cta && (
-        <aside className={s.quick} style={{ marginTop: 48 }}>
-          {post.content.cta.heading && <p className={s.quickLabel} style={{ marginBottom: 8 }}>{post.content.cta.heading}</p>}
-          {post.content.cta.body && <p>{post.content.cta.body}</p>}
-          {post.content.cta.button_text && post.content.cta.button_url && (
-            <a href={post.content.cta.button_url} className={s.btn} style={{ color: '#fff', textDecoration: 'none' }}>
-              {post.content.cta.button_text}
-            </a>
-          )}
-        </aside>
-      )}
+      {intro && <p className={s.lead}>{intro}</p>}
+      {nodes}
     </BlogPostLayout>
   );
 }
