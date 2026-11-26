@@ -12,8 +12,10 @@ initializeApp();
 const db = getFirestore();
 db.settings({ ignoreUndefinedProperties: true });
 
-const SITE_URL = defineString('SITE_URL');
-const GSC_PROPERTY = defineString('GSC_PROPERTY');
+// Override with seo-bot/.env.<projectId> if needed. "sc-domain:" = Domain property (covers app.meritcyc.com too);
+// use "https://meritcyc.com/" for a URL-prefix property.
+const SITE_URL = defineString('SITE_URL', { default: 'https://meritcyc.com' });
+const GSC_PROPERTY = defineString('GSC_PROPERTY', { default: 'sc-domain:meritcyc.com' });
 const TELEGRAM_BOT_TOKEN = defineSecret('TELEGRAM_BOT_TOKEN');
 const TELEGRAM_CHAT_ID = defineSecret('TELEGRAM_CHAT_ID');
 

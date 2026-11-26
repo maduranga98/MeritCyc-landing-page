@@ -28,7 +28,7 @@ firebase functions:secrets:set TELEGRAM_BOT_TOKEN
 firebase functions:secrets:set TELEGRAM_CHAT_ID
 ```
 
-`SITE_URL` and `GSC_PROPERTY` live in `seo-bot/.env` (not secret). `sc-domain:meritcyc.com` is a Domain property; use `https://meritcyc.com/` if yours is a URL-prefix property.
+`SITE_URL` and `GSC_PROPERTY` default to `https://meritcyc.com` and `sc-domain:meritcyc.com` (see `src/index.ts`). `sc-domain:meritcyc.com` is a Domain property; use `https://meritcyc.com/` if yours is a URL-prefix property.
 
 ## Deploy
 
