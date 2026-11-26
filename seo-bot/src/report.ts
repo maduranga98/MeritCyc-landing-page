@@ -98,7 +98,7 @@ function sections(r: SeoReport, maxIssues: number): { summary: string[]; section
       ...r.search.queryGains.slice(0, 5).map((m) => `"${m.key}" — ${pos(m.from)} → ${pos(m.to)}`),
     ]);
     add('🆕 New queries', r.search.newQueries.slice(0, 6).map((m) => `${m.key} — pos ${pos(m.position)}, ${m.impressions} impressions`));
-    add('🏆 Top pages', r.search.topPages.slice(0, 5).map((m) => `${short(m.key)} — ${m.clicks} clicks, ${m.impressions} impressions, pos ${pos(m.position)}`));
+    add('🏆 Top pages', r.search.topPages.slice(0, 5).map((m) => `${short(m.key)} — ${plural(m.clicks, 'click')}, ${plural(m.impressions, 'impression')}, pos ${pos(m.position)}`));
   } else {
     summary.push(`⚠️ Search Console: ${r.searchError ?? 'not run'}`);
   }

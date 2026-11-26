@@ -2,16 +2,19 @@
 {
   "slug": "pay-compression-causes-and-solutions",
   "order": 2,
-  "title": "Pay Compression: Causes, Warning Signs and How to Fix It",
-  "seoTitle": "Pay Compression: Causes, Examples and How to Fix It",
-  "description": "Learn what pay compression is, why experienced employees can end up close to new-hire pay, and how HR can identify and address it.",
+  "title": "Salary Compression (Pay Compression): What It Is, Causes and How to Prevent It",
+  "seoTitle": "Salary Compression: What It Is and How to Prevent It",
+  "description": "What is salary compression and how can you prevent it? See the causes, a worked example and the steps HR can take to find, fix and prevent pay compression.",
   "primaryKeyword": "pay compression",
   "keywords": [
     "pay compression",
     "salary compression",
     "pay compression examples",
     "salary compression solutions",
-    "new hire pay versus existing employees"
+    "new hire pay versus existing employees",
+    "what is salary compression",
+    "how to prevent salary compression",
+    "how to avoid pay compression"
   ],
   "intent": "Problem diagnosis and solutions",
   "date": "2026-11-04",
@@ -44,9 +47,11 @@
 
 A company hires a new employee at the current market rate. The new hire’s salary is only slightly lower than the salary of an employee who has performed the same role successfully for five years. The experienced employee notices. Their manager struggles to explain the difference. HR has a pay-compression problem.
 
-### Quick answer: What is pay compression?
+### Quick answer: What is salary compression and how can you prevent it?
 
-Pay compression occurs when pay differences between employees become unusually small relative to meaningful differences in experience, skills, responsibilities, performance or seniority. It can happen between new hires and experienced employees, or between employees at different job levels.
+Salary compression (also called pay compression) occurs when pay differences between employees become unusually small relative to meaningful differences in experience, skills, responsibilities, performance or seniority. It can happen between new hires and experienced employees, or between employees at different job levels.
+
+To prevent it, review salary ranges against the market on a fixed schedule, control starting-pay exceptions, set clear rules for promotion increases, and check internal pay relationships during every compensation cycle, not only when someone resigns.
 
 Pay compression does not automatically prove that a pay decision is unlawful or incorrect. It is a warning sign that the organization should investigate how its pay structure and decisions are working.
 
@@ -81,7 +86,7 @@ The example is illustrative. There is no universal percentage that defines pay c
 
 **Step 2: Review employee pay by level and tenure.** Look for clusters where new hires and experienced employees have very similar pay. Also examine cases where employees in higher-level roles earn close to or below employees at lower levels.
 
-**Step 3: Check salary-range position.** Compare each employee’s salary with the minimum, midpoint and maximum of the relevant range. A range midpoint or compa-ratio can help identify unusual pay positions, but it does not explain the cause on its own.
+**Step 3: Check salary-range position.** Compare each employee’s salary with the minimum, midpoint and maximum of the relevant range. A range midpoint or [compa-ratio](/blog/what-is-compa-ratio) can help identify unusual pay positions, but it does not explain the cause on its own.
 
 **Step 4: Review pay decisions over time.** Examine starting salaries, annual increases, promotions, retention adjustments and changes in job scope. Compression often develops through a series of individually understandable decisions.
 
@@ -95,15 +100,18 @@ Set priorities using documented criteria: business criticality, severity of the 
 
 Avoid solving compression for one employee in a way that creates a new unexplained disparity elsewhere. Model the full cost of proposed adjustments before approval.
 
-### How can companies prevent pay compression?
+### How can you prevent salary compression?
 
-- Review salary structures and market reference points on a planned schedule.
+- Review [salary bands](/blog/how-to-build-salary-bands-and-pay-grades) and market reference points on a planned schedule.
 - Define who can approve starting-pay exceptions and require a written reason.
 - Establish guidelines for promotion increases and market adjustments.
 - Review internal pay relationships during annual compensation planning, not only when someone resigns.
 - Document decisions so HR can explain how pay evolved.
 
 ### Frequently asked questions
+
+**Is salary compression the same as pay compression?**  
+Yes. The two terms are used interchangeably. Both describe pay gaps that have become too small to reflect real differences in role, skills, experience or performance.
 
 **Is pay compression the same as pay inversion?**  
 The terms are related. Pay compression describes unusually small differences between pay levels or employee groups. Pay inversion is a more specific situation in which a lower-level or less-experienced employee earns more than a higher-level or more-experienced employee.
