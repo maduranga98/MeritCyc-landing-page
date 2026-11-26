@@ -4,7 +4,7 @@ A scheduled Firebase Function that runs **every Monday 09:00 (Asia/Colombo)**:
 
 1. **Search Console** – last 28 days vs the previous 28: clicks, impressions, avg position, queries close to the top (pos 4–20), page-1 rankings with low CTR, ranking drops/gains, new queries.
 2. **Site crawl** – robots.txt, sitemap and every page in it: status/redirects, noindex, title & description length, canonical, `<h1>`, image alt text, thin content, duplicate titles/descriptions, broken internal links and schema images.
-3. Saves the full report to Firestore `seoReports/{YYYY-MM-DD}` and **emails** you a summary (via [Resend](https://resend.com), free up to 3,000 emails/month).
+3. Saves the full report to Firestore `seoReports/{YYYY-MM-DD}` and **emails** you a summary from your Gmail account.
 
 Cost: one run a week is well inside the free tiers (the project must be on the Blaze plan for scheduled functions).
 
@@ -20,17 +20,19 @@ gcloud projects describe meritcyc-7a683 --format='value(projectNumber)'
 ```
 
 3. **Search Console** → *Settings → Users and permissions → Add user* → paste that service account email, permission **Restricted**.
-4. **Email**: sign up at [resend.com](https://resend.com) **with the address you want the reports sent to**, then *API Keys → Create* (permission: Sending access).
-5. Store the key and your address as secrets (the address is a secret so it never appears in this public repo; comma-separate several):
+4. **Gmail**: on the Gmail account that should send and receive the report, turn on 2-Step Verification, then create an **App Password** at <https://myaccount.google.com/apppasswords>. Your normal Gmail password will not work.
+5. Store both as secrets (typed into the terminal prompt, never committed):
 
 ```bash
-firebase functions:secrets:set RESEND_API_KEY
-firebase functions:secrets:set REPORT_EMAIL
+firebase functions:secrets:set GMAIL_USER          # e.g. you@gmail.com
+firebase functions:secrets:set GMAIL_APP_PASSWORD  # the 16-character app password
 ```
 
-By default mail is sent from Resend's shared `onboarding@resend.dev` address, which **only delivers to your own Resend account email**, with no DNS setup. To send from `seo@meritcyc.com` or to other people, verify `meritcyc.com` under *Resend → Domains* (adds a few DNS records), then create `seo-bot/.env.meritcyc-7a683` containing `EMAIL_FROM=MeritCyc SEO <seo@meritcyc.com>` and redeploy.
+The report is emailed to `GMAIL_USER`. To copy others, create `seo-bot/.env.meritcyc-7a683` with `REPORT_CC=a@x.com,b@y.com`.
 
-`SITE_URL` and `GSC_PROPERTY` default to `https://meritcyc.com` and `sc-domain:meritcyc.com` (see `src/index.ts`). `sc-domain:meritcyc.com` is a Domain property; use `https://meritcyc.com/` if yours is a URL-prefix property.
+The Search Console property can belong to a **different** Google account: the function uses the project's service account (step 3), not your Gmail.
+
+`SITE_URL` and `GSC_PROPERTY` default to `https://meritcyc.com` and `sc-domain:meritcyc.com` (see `src/index.ts`).
 
 ## Deploy
 
@@ -62,6 +64,6 @@ The CLI exits with code 1 when the crawl finds errors, so it can also gate CI.
 | `src/crawl.ts` | robots / sitemap / page / link fetching |
 | `src/gsc.ts` | Search Console REST client + date windows |
 | `src/report.ts` | Report object + email HTML / terminal text |
-| `src/notify.ts` | Email via Resend |
+| `src/notify.ts` | Email via Gmail SMTP |
 | `src/index.ts` | Scheduled function |
 | `src/cli.ts` | Local runner |
