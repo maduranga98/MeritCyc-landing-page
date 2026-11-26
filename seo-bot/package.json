@@ -13,6 +13,7 @@
     "deploy": "firebase deploy --only functions:seo-bot"
   },
   "dependencies": {
+    "@google-cloud/firestore": "^9.4.1",
     "cheerio": "^1.2.0",
     "firebase-admin": "^14.5.1",
     "firebase-functions": "^7.4.0",
